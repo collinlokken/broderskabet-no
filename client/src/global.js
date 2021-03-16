@@ -6,12 +6,9 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     border: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
-    overflow: hidden;
-  }
-  body {
-    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
   }
   
   *, *::after, *::before {
@@ -19,8 +16,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     align-items: center;
-    background: ${({ theme }) => theme.primaryDark};
-    color: ${({ theme }) => theme.primaryLight};
+    background: ${({ theme }) => theme.primaryLight};
+    color: ${({ theme }) => theme.primaryDark};
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     height: 100vh;

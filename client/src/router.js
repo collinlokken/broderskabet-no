@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Home from './components/Home';
-import Student from './components/Student';
+import { Home, Student, Kontakt }  from './components';
 
 const routes = {
-    "/home": () => <Home />,
-    "/student": () => <Student /> 
+    "/": () => <Home />,
+    "/student": () => <Student />,
+    "/kontakt": () => <Kontakt />,
   };
 
 export default routes;
