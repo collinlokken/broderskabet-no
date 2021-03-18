@@ -9,7 +9,7 @@ import { Burger, Menu } from './components';
 
 
 function App() {
-  const routeResult = useRoutes(routes)
+  const routeResult = useRoutes(routes);
   const [open, setOpen] = useState(false);
   return (
     <ThemeProvider theme={theme}>

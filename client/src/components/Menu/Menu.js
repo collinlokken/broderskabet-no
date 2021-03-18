@@ -1,29 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { A } from 'hookrouter';
 import { StyledMenu } from './Menu.styled';
 import { bool } from 'prop-types';
+import { StyledSubMenu } from './SubMenu';
+import styled from 'styled-components';
+
+const Button = styled.div`
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: ${({ theme }) => theme.primaryDark};
+    background: ${({ theme }) => theme.primaryLight};s
+    text-decoration: none;
+    transition: color 0.3s linear;
+`;
 
 const Menu = ({open, setOpen}) => {
+  const [toggle, setToggle] = useState(false)
   return (
-    <StyledMenu open={open}>
-      <A href="/" onClick={() => setOpen(false)}>
-        <span role="img" aria-label="Hjem">&#x1F3E0;</span>
+    <StyledMenu open={open} toggle={toggle}>
+      <A className="menu-element" href="/" onClick={() => setOpen(false)}>
         Hjem
       </A>
-      <A href="/student" onClick={() => setOpen(false)}>
-        <span role="img" aria-label="Student">&#x1F393;</span>
-        Student
-      </A>
-      <A href="/broderskabet" onClick={() => setOpen(false)}>
-        <span role="img" aria-label="Broderskabet">&#x1F64B;&#127997;</span>
+      <Button className="menu-element" onClick={()=>setToggle(!toggle)}>
+          Student
+      </Button>
+      <div className="sub-link-container">
+        <A className="sub-link" href="/fadderuke" onClick={() => setOpen(false)}>
+          Fadderukene
+        </A>
+        <A className="sub-link" href="/trondheim" onClick={() => setOpen(false)}>
+          Byen og Gløs
+        </A>
+        <A className="sub-link" href="/student" onClick={() => setOpen(false)}>
+          Livet som student
+        </A>
+      </div>
+      <A className="menu-element" href="/broderskabet" onClick={() => setOpen(false)}>
         Broderskabet
       </A>
-      <A href="/undergrupper" onClick={() => setOpen(false)}>
-        <span role="img" aria-label="Undergrupper">&#x1F46F;</span>
+      <A className="menu-element" href="/undergrupper" onClick={() => setOpen(false)}>
         Undergrupper
       </A>
-      <A href="/kontakt" onClick={() => setOpen(false)}>
-        <span role="img" aria-label="Kontakt">&#x1f4e9;</span>
+      <A className="menu-element" href="/kontakt" onClick={() => setOpen(false)}>
         Kontakt
       </A>
     </StyledMenu>
