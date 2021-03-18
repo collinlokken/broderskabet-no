@@ -11,11 +11,14 @@ export const StyledMenu = styled.nav`
   position: absolute;
   top: 0;
   right: 0;
+
+  border-left: 2px solid black;
+
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 90%;
   }
 
   a {

@@ -13,11 +13,19 @@ const Menu = ({open, setOpen}) => {
       <A href="/student" onClick={() => setOpen(false)}>
         <span role="img" aria-label="Student">&#x1F393;</span>
         Student
-        </A>
+      </A>
+      <A href="/broderskabet" onClick={() => setOpen(false)}>
+        <span role="img" aria-label="Broderskabet">&#x1F64B;&#127997;</span>
+        Broderskabet
+      </A>
+      <A href="/undergrupper" onClick={() => setOpen(false)}>
+        <span role="img" aria-label="Undergrupper">&#x1F46F;</span>
+        Undergrupper
+      </A>
       <A href="/kontakt" onClick={() => setOpen(false)}>
         <span role="img" aria-label="Kontakt">&#x1f4e9;</span>
         Kontakt
-        </A>
+      </A>
     </StyledMenu>
   )
 }
