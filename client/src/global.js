@@ -18,10 +18,25 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     background: ${({ theme }) => theme.primaryLight};
     color: ${({ theme }) => theme.primaryDark};
-    display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     height: 100vh;
-    justify-content: center;
     text-rendering: optimizeLegibility;
+  }
+  #root, .App{
+    height: 100%;
+  }
+  .App {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column
+  }
+  .nav-bar {
+    width: 100vw;
+  }
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    .burger-menu{
+      display: None;
+    }
   }
   `

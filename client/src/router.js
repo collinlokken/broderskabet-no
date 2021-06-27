@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim }  from './components';
+import { Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register }  from './components';
 
 const routes = {
     "/": () => <Home />,
@@ -10,6 +10,8 @@ const routes = {
     "/kontakt": () => <Kontakt />,
     "/broderskabet": () => <About />,
     "/undergrupper": () => <Groups />,
+    "/login": () => <Login />,
+    "/register": () => <Register />,
   };
 
 export default routes;

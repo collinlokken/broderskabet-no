@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { A } from 'hookrouter';
 import { StyledMenu } from './Menu.styled';
 import { bool } from 'prop-types';
-import { StyledSubMenu } from './SubMenu';
 import styled from 'styled-components';
 
 const Button = styled.div`
@@ -21,6 +20,14 @@ const Menu = ({open, setOpen}) => {
   const [toggle, setToggle] = useState(false)
   return (
     <StyledMenu open={open} toggle={toggle}>
+      <div className="menu-element user-container">
+        <A href="/register" onClick={() => setOpen(false)}>
+          Register
+        </A>
+        <A href="/login" onClick={() => setOpen(false)}>
+          Login
+        </A>
+      </div>
       <A className="menu-element" href="/" onClick={() => setOpen(false)}>
         Hjem
       </A>

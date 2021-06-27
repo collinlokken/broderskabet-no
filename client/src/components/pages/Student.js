@@ -1,6 +1,13 @@
 import React from 'react';
+import { StyledPage } from './pages.styled';
 
-const Student = () => {
-    return <h1>Livet som student</h1>;
+const Student = () => {    
+    return (
+        <StyledPage>
+            <div className="container">
+                <h1>Livet som student</h1>
+            </div>
+        </StyledPage>
+    );
 };
 export { Student }
