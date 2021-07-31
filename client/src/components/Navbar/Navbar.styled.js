@@ -6,16 +6,17 @@ export const StyledNavbar = styled.nav`
     .nav-link-container {
         display: None;
     }
+    margin: 0 auto;
+    margin-top: 2rem;
   }
-  padding: 1rem;
+  height: 5rem;
+  width: 95vw;
+  padding: 0;
+  margin: 1rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  .nav-link-container {
-    padding: 1rem;
-    align-items: center;
-  }
-  a, div {
+  a {
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -23,11 +24,11 @@ export const StyledNavbar = styled.nav`
     color: ${({ theme }) => theme.primaryDark};
     text-decoration: none;
     transition: color 0.3s linear;
-
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
     }
   }
+  
   .logo-container {
     display: flex;
     flex-direction: row;

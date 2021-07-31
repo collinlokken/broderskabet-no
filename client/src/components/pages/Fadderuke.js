@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Fadderuke = () => {
-    return <h1>Fadderuka 2021</h1>;
+export const Fadderuke = () => {
+    return (
+        <div className="content-container">
+            <h1>Fadderuken 2021</h1>
+        </div>
+    );
 };
-export { Fadderuke }

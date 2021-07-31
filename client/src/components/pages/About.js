@@ -1,14 +1,9 @@
 import React from 'react';
-import { StyledPage } from './pages.styled';
 
-const About = () => {
-    return(
-        <StyledPage>
-            <div className="container">
-                <h1>Broderskabet</h1>
-            </div>
-        </StyledPage>
+export const About = () => {
+    return (
+        <div className="content-container">
+            <h1>Broderskabet</h1>
+        </div>
     );
 };
-
-export { About }

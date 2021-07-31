@@ -1,13 +1,9 @@
 import React from 'react';
-import { StyledPage } from './pages.styled';
 
-const Student = () => {    
+export const Student = () => {
     return (
-        <StyledPage>
-            <div className="container">
-                <h1>Livet som student</h1>
-            </div>
-        </StyledPage>
+        <div className="content-container">
+            <h1>Livet som student</h1>
+        </div>
     );
 };
-export { Student }

@@ -1,15 +1,11 @@
 import React from 'react';
-import { StyledPage } from './pages.styled'
+import{ HomeImage } from './pages.styled'
+import Forsidebilde from '../../img/Forsidebilde-crop.png'
 
-const Home = () => {
+export const Home = () => {
     return (
-        <StyledPage>
-            <div className="container">
-                <h1>Velkommen!</h1>
-            </div>
-        </StyledPage>
+        <HomeImage>
+            <img src={Forsidebilde} alt="sketch of boy and girl"/>
+        </HomeImage>
     );
-        
 };
-
-export { Home }

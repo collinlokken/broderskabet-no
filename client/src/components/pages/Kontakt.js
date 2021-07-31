@@ -1,13 +1,9 @@
 import React from 'react';
-import { StyledPage } from './pages.styled';
 
-const Kontakt = () => {
+export const Kontakt = () => {
     return (
-        <StyledPage>
-            <div className="container">
-                <h1>Kontakt</h1>
-            </div>
-        </StyledPage>
+        <div className="content-container">
+            <h1>Kontakt</h1>
+        </div>
     );
 };
-export { Kontakt }
