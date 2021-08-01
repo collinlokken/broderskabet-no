@@ -20,7 +20,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.primaryDark};
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    height: 100vh;
     text-rendering: optimizeLegibility;
   }
   #root, .App{
