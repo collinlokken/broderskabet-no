@@ -27,6 +27,7 @@ export const Sponsors = styled.div`
     @media (max-width: ${({theme}) => theme.mobile}) {
         img {
             width: 90vw;
+            margin: 20px 0;
         }
     } 
 `
