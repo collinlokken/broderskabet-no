@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const StyledImage = styled.div`
     background-image: url(${({thumbnail}) => thumbnail});
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 1px solid #00000029;
     box-shadow: 0 15px 12px -12px #00000026;
     margin: 0 auto;
