@@ -47,6 +47,5 @@ export const GlobalStyles = createGlobalStyle`
     .burger-menu{
       display: None;
     }
-    position: fixed;
   }
   `

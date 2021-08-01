@@ -4,8 +4,8 @@ export const StyledBurger = styled.button`
   display: None;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: fixed;
-    top: calc(100vh - 7rem);
-    right: 2rem;
+    bottom: 50px  ;
+    right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
