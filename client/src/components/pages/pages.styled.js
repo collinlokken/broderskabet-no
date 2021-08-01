@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledPage = styled.div`
-    @media (max-width: ${({theme})=> theme.mobile}) {
-        margin-top: 1rem;
-    }
     padding: 0 2rem;
+    margin-top: 17vh;
     width: fit-content;
     height: 100%;
     display: flex;
@@ -64,13 +62,22 @@ export const ThreePartTemplate = styled.div`
     .page-title {
         font-size: 1.5rem;
         font-weight: 600;
-        width: 15vw
+        width: 10vw
     }
     .page-text {
-        width: 25vw;
+        width: ${({textWidth}) => textWidth == 40 ? `${textWidth}vw` : "25vw"}
+    }
+    .page-text-segment {
+        margin-bottom: 2rem;
     }
     .page-content {
         width: 40vw;
+    }
+    .page-cards {
+        width: 70vw;
+        display: flex;
+        flex-flow: row wrap;
+        flex-grow: 1;
     }
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-direction: column;
@@ -84,6 +91,13 @@ export const ThreePartTemplate = styled.div`
         .page-text {
             width: 100%;
             margin: 2rem 0;
+        }
+        .page-cards {
+            width: 90vw;
+            display: flex;
+            flex-flow: column nowrap;
+            flex-grow: 1;
+            align-items: center;
         }
     }
 `

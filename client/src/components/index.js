@@ -15,3 +15,5 @@ export { Fadderuke } from './pages/Fadderuke'
 export { Trondheim } from './pages/Trondheim'
 export { Historie } from './pages/Historie'
 export { Vedtekter } from './pages/Vedtekter'
+export { Collegiet } from './pages/Collegiet'
+

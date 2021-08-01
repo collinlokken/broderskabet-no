@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter }  from './components';
+import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet }  from './components';
 
 const routes = {
     "/": () => <Base children={<Home />} />,
@@ -14,6 +14,7 @@ const routes = {
     "/registrer": () => <Base children={<Register />} />,
     "/historie": () => <Base children={<Historie />} />,
     "/vedtekter": () => <Base children={<Vedtekter />} />,
+    "/collegiet": () => <Base children={<Collegiet />} />,
   };
 
 export default routes;

@@ -5,7 +5,7 @@ import Forsidebilde from '../../img/Forsidebilde.png'
 
 export const Historie = () => {
     return (
-        <ThreePartTemplate> {/* Needs three children */}
+        <ThreePartTemplate textWidth={40}> {/* Needs three children */}
             <div className="page-title">
                 Historie
             </div>

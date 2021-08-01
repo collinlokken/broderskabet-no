@@ -11,7 +11,7 @@ export const StyledNavElement = styled.div`
         margin-top: 0.3rem;
     }
     li {
-        background-color: ${({theme, toggle}) => toggle ? theme.secondaryLight : theme.primaryLight};
+        background-color: ${({theme, toggle}) => toggle ? theme.secondaryLight : "blur(10px)"};
         padding: 0.3rem;
         opacity: ${({toggle}) => toggle ? "1" : "0.0"};
         transition: opacity 0.5s;

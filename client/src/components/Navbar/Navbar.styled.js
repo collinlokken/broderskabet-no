@@ -9,10 +9,7 @@ export const StyledNavbar = styled.nav`
     margin: 0 auto;
     margin-top: 2rem;
   }
-  height: 5rem;
-  width: 95vw;
-  padding: 0;
-  margin: 1rem auto;
+  width: 94vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -45,7 +42,7 @@ export const StyledNavbar = styled.nav`
 
 export const Logo = styled.div`
     background-image: url(${B_sort});
-    background-color: ${({theme}) => theme.primaryLight};
+    background-color: "blur(10px)";
     width: 60px;
     height: 60px;
     background-position: center;

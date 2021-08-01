@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import B_sort from '../../img/B_sort.png'
 
 export const StyledImage = styled.div`
-    background-image: url(${B_sort});
+    background-image: url(${({thumbnail}) => thumbnail});
     background-position: center;
     background-size: cover;
-    border: 1px solid black;
+    border: 1px solid #00000029;
+    box-shadow: 0 15px 12px -12px #00000026;
     margin: 0 auto;
     width: 9vw;
     height: 9vw;
@@ -13,6 +13,10 @@ export const StyledImage = styled.div`
         width: 25vw;
         height: 25vw;
     }
+    &:hover {
+        background-color: ${({ theme }) => theme.secondaryLight};
+    }
+    transition: background-color 0.2s;
     `
     
 export const StyledBox = styled.div`
