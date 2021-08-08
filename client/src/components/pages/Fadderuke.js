@@ -15,9 +15,9 @@ export const Fadderuke = () => {
                 Fadderukene 2021
             </div>
             <div className="page-content">
-                <img src={image}/>
-                <img src={Pakkeliste}/>
-                <img src={Fadderbarn}/>
+                <img src={image} alt="program"/>
+                <img src={Pakkeliste} alt="pakkeliste"/>
+                <img src={Fadderbarn} alt="fadderbarn"/>
             </div>
         </ThreePartTemplate>
     );
