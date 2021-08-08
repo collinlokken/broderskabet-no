@@ -1,6 +1,6 @@
 export const links = [
     {sublinks: [
-      {title: "Broderskabet", path:"broderskabet"},
+      {title: "Broderskabet", path:""},
       {title: "Collegiet", path:"collegiet"},
       {title: "Undergrupper", path:"undergrupper"},
       {title: "Historie", path:"historie"},

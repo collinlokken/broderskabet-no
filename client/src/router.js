@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet }  from './components';
+import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet, GroupSwitch, PageNotFound, TempPage }  from './components';
 
 const routes = {
     "/": () => <Base children={<Home />} />,
@@ -10,11 +10,12 @@ const routes = {
     "/kontakt": () => <Base children={<Kontakt />} />,
     "/broderskabet": () => <Base children={<About />} />,
     "/undergrupper": () => <Base children={<Groups />} />,
-    "/login": () => <Base children={<Login />} />,
-    "/registrer": () => <Base children={<Register />} />,
+    "/login": () => <Base children={<TempPage />} />, // ---> TODO
+    "/registrer": () => <Base children={<TempPage />} />, // ---> TODO
     "/historie": () => <Base children={<Historie />} />,
     "/vedtekter": () => <Base children={<Vedtekter />} />,
     "/collegiet": () => <Base children={<Collegiet />} />,
+    "/undergrupper/:id": ({id}) => <Base children={<GroupSwitch id={id} />} />,
   };
 
 export default routes;

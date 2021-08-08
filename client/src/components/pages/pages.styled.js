@@ -34,7 +34,7 @@ export const Sponsors = styled.div`
 
 export const HomeImage = styled.div`
     img {
-        width: 60vw;
+        width: 50vw;
     }
     @media (max-width: ${({theme}) => theme.mobile}) {
         img {
@@ -66,13 +66,19 @@ export const ThreePartTemplate = styled.div`
         width: 10vw
     }
     .page-text {
-        width: ${({textWidth}) => textWidth == 40 ? `${textWidth}vw` : "25vw"}
+        padding: 0 5vw;
+        width: ${({textWidth}) => `${textWidth}vw`}
     }
     .page-text-segment {
         margin-bottom: 2rem;
     }
     .page-content {
         width: 40vw;
+        flex-grow: 1;
+    }
+    .page-content img {
+        width: 100%;
+        padding: 0 6vw;
     }
     .page-cards {
         width: 70vw;
@@ -80,11 +86,25 @@ export const ThreePartTemplate = styled.div`
         flex-flow: row wrap;
         flex-grow: 1;
     }
+    .about {
+        margin: 2vh 1vw 2vh 1vw;
+        width: 35vw;
+        flex-grow: 1;
+        @media (max-width: ${({theme}) => theme.mobile}) {
+            flex-flow: column nowrap;
+            width: 100%;
+        }
+    }
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-direction: column;
         .page-title {
             font-size: 1.5rem;
             font-weight: 600;
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 6vw;
         }
         .page-content {
             width: 100%;
@@ -100,5 +120,24 @@ export const ThreePartTemplate = styled.div`
             flex-grow: 1;
             align-items: center;
         }
+    }
+`
+
+export const StyledGroupPhoto = styled.div`
+    background-image: url(${({background}) => background});
+    background-position: center;
+    background-size: cover;
+    margin: 2vh 1vw 2vh 1vw;
+    width: 35vw;
+    flex-grow: 1;
+    box-shadow: inset 15px 15px 12px 0 #00000054, inset -15px -15px 12px 0 #00000054;
+    border: 1px solid #00000029;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 35vh;
+    }
+    &:hover {
+        background-image: url(${({background2}) => background2});
     }
 `

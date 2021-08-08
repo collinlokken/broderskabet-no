@@ -16,4 +16,6 @@ export { Trondheim } from './pages/Trondheim'
 export { Historie } from './pages/Historie'
 export { Vedtekter } from './pages/Vedtekter'
 export { Collegiet } from './pages/Collegiet'
-
+export { GroupSwitch } from './pages/GroupSwitch'
+export { PageNotFound } from './pages/PageNotFound'
+export { TempPage } from './pages/TempPage'

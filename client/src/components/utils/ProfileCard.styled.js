@@ -9,17 +9,21 @@ export const StyledProfileCard = styled.div`
     box-shadow: 0 15px 12px -12px #00000026;
     border: 1px solid #00000029;
     flex-grow: 1;
+    background-color: ${({theme}) => theme.secondaryLight};
     .profile-left {
         display: flex;
         flex-direction: column;
         width: 30%;
         flex-grow: 2;
-        padding: 1vw;
+        padding: 5px;
     }
     .profile-right {
         width: 33%;
         flex-grow: 1;
-        padding: 1vw;
+        padding: 10px;
+    }
+    .contact-info {
+        padding: 5px;
     }
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-flow: column nowrap;
@@ -41,6 +45,7 @@ export const StyledImage = styled.div`
     background-size: cover;
     border: 1px solid #00000029;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 290px;
+    height: 290px;
+    box-shadow: inset 15px 15px 12px 0 #00000054, inset -15px -15px 12px 0 #00000054;
 `

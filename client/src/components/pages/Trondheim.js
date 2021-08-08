@@ -5,7 +5,7 @@ import Forsidebilde from '../../img/Forsidebilde-crop.png'
 
 export const Trondheim = () => {
     return (
-        <ThreePartTemplate> {/* Needs three children */}
+        <ThreePartTemplate textWidth={40}> {/* Needs three children */}
             <div className="page-title">
                 Byen og Gløshaugen
             </div>
