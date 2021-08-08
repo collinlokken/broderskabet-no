@@ -137,7 +137,4 @@ export const StyledGroupPhoto = styled.div`
         width: 100%;
         height: 35vh;
     }
-    &:hover {
-        background-image: url(${({background2}) => background2});
-    }
 `
