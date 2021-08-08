@@ -12,7 +12,6 @@ import troldquinde from '/client/src/img/collegiet/Troldquinde.jpg'
 import domina from '/client/src/img/collegiet/Domina.jpg'
 import vicedom from '/client/src/img/collegiet/Vicedom.jpg'
 import Felles from '/client/src/img/collegiet/1felles.jpeg'
-import Felles2 from '/client/src/img/collegiet/2felles.jpeg'
 
 import { Blaestemester, Ceremonimester, Chronikeskriffuer, Domina, Novicekommandeur, Phinancephut, Troldquinden, Vicedominus } from './Styret'
 
@@ -40,7 +39,7 @@ export const Collegiet = () => {
                     For mer informasjon om de forskjellige stillingene i Collegiet og kontaktinformasjon, se deres egne sider.
                     </p>
                 </div>
-                { !isMobile && <StyledGroupPhoto background={Felles} background2={Felles2}/>}
+                { !isMobile && <StyledGroupPhoto background={Felles}/>}
                 <ProfileCard thumbnail={domina} medlem={Domina}/>
                 <ProfileCard thumbnail={vicedom} medlem={Vicedominus}/>
                 <ProfileCard thumbnail={blest} medlem={Blaestemester}/>
