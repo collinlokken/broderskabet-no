@@ -1,17 +1,17 @@
 import React from 'react'
 import { ProfileCard } from '../utils/ProfileCard'
 import { ThreePartTemplate, StyledGroupPhoto } from './pages.styled'
-import useWindowSize from '/client/src/components/hooks/useWindowSize';
+import useWindowSize from '../hooks/useWindowSize';
 
-import blest from '/client/src/img/collegiet/Blest.jpg'
-import ceremoni from '/client/src/img/collegiet/Ceremoni.jpg'
-import chroniker from '/client/src/img/collegiet/Chroniker.jpg'
-import novice from '/client/src/img/collegiet/Novice.jpg'
-import phinans from '/client/src/img/collegiet/Phinans.jpg'
-import troldquinde from '/client/src/img/collegiet/Troldquinde.jpg'
-import domina from '/client/src/img/collegiet/Domina.jpg'
-import vicedom from '/client/src/img/collegiet/Vicedom.jpg'
-import Felles from '/client/src/img/collegiet/1felles.jpeg'
+import blest from '../../img/collegiet/Blest.jpg'
+import ceremoni from '../../img/collegiet/Ceremoni.jpg'
+import chroniker from '../../img/collegiet/Chroniker.jpg'
+import novice from '../../img/collegiet/Novice.jpg'
+import phinans from '../../img/collegiet/Phinans.jpg'
+import troldquinde from '../../img/collegiet/Troldquinde.jpg'
+import domina from '../../img/collegiet/Domina.jpg'
+import vicedom from '../../img/collegiet/Vicedom.jpg'
+import Felles from '../../img/collegiet/1felles.jpeg'
 
 import { Blaestemester, Ceremonimester, Chronikeskriffuer, Domina, Novicekommandeur, Phinancephut, Troldquinden, Vicedominus } from './Styret'
 

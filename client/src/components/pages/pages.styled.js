@@ -34,7 +34,7 @@ export const Sponsors = styled.div`
 
 export const HomeImage = styled.div`
     img {
-        width: 50vw;
+        width: 47vw;
     }
     @media (max-width: ${({theme}) => theme.mobile}) {
         img {
