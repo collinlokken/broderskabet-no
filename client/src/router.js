@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet, GroupSwitch, PageNotFound, TempPage }  from './components';
+import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet, GroupSwitch, PageNotFound, TempPage }  from 'Components';
 
 const routes = {
     "/": () => <Base children={<Home />} />,

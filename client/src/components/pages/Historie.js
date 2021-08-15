@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThreePartTemplate, HomeImagePage } from './pages.styled'
-import Forsidebilde from '../../img/Forsidebilde.png'
+import { Forsidebilde } from 'Images'
 
 
 export const Historie = () => {

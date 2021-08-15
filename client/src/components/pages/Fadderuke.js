@@ -1,10 +1,7 @@
 import React from 'react';
 import { ThreePartTemplate } from './pages.styled'
-import Program from '../../img/fadderuka/program.jpg'
-import ProgramMobile from '../../img/fadderuka/program-mobile.jpg'
+import { Program, ProgramMobile, Pakkeliste, Fadderbarn} from 'Images'
 import useWindowSize from '../hooks/useWindowSize';
-import Pakkeliste from '../../img/fadderuka/pakkeliste.jpg'
-import Fadderbarn from '../../img/fadderuka/fadderbarn.jpg'
 
 export const Fadderuke = () => {
     const windowSize = useWindowSize()

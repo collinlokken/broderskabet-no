@@ -5,7 +5,7 @@ import { theme } from './theme';
 import { useRoutes } from 'hookrouter';
 import routes from './router';
 
-import { Burger, Menu, Navbar } from './components';
+import { Burger, Menu, Navbar } from 'Components';
 
 
 function App() {

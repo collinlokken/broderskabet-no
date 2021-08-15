@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledPage } from '../pages/pages.styled'
+import { StyledPage } from 'Components/pages/pages.styled'
 
 export const StyledLogin = styled(StyledPage)`
     

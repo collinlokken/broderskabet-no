@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import B_sort from '../../img/B_sort.png'
+import { B_sort } from 'Images'
 
 export const StyledNavbar = styled.nav`
   @media (max-width: ${({theme}) => theme.mobile}) {

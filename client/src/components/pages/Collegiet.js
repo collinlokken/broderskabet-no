@@ -2,18 +2,8 @@ import React from 'react'
 import { ProfileCard } from '../utils/ProfileCard'
 import { ThreePartTemplate, StyledGroupPhoto } from './pages.styled'
 import useWindowSize from '../hooks/useWindowSize';
-
-import blest from '../../img/collegiet/Blest.jpg'
-import ceremoni from '../../img/collegiet/Ceremoni.jpg'
-import chroniker from '../../img/collegiet/Chroniker.jpg'
-import novice from '../../img/collegiet/Novice.jpg'
-import phinans from '../../img/collegiet/Phinans.jpg'
-import troldquinde from '../../img/collegiet/Troldquinde.jpg'
-import domina from '../../img/collegiet/Domina.jpg'
-import vicedom from '../../img/collegiet/Vicedom.jpg'
-import Felles from '../../img/collegiet/1felles.jpeg'
-
-import { Blaestemester, Ceremonimester, Chronikeskriffuer, Domina, Novicekommandeur, Phinancephut, Troldquinden, Vicedominus } from './Styret'
+import { blest, ceremoni, chroniker, novice, phinans, troldquinde, domina, vicedom, Felles } from 'Images'
+import { Blaestemester, Ceremonimester, Chronikeskriffuer, Domina, Novicekommandeur, Phinancephut, Troldquinden, Vicedominus } from 'Components/pages/Styret'
 
 export const Collegiet = () => {
     const windowSize = useWindowSize()

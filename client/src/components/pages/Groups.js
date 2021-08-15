@@ -1,18 +1,7 @@
 import React from 'react';
 import { ThreePartTemplate } from './pages.styled'
 import { Box } from '../utils/Box'
-import Arkitekthjelpen from '../../img/Arkitekthjelpen.png'
-import Arrkom from '../../img/Arrkom.png'
-import Bevern from '../../img/Bevern.png'
-import Bryggegruppen from '../../img/Bryggegruppen.png'
-import Connect from '../../img/Connect.png'
-import Hoeychoret from '../../img/Hoeychoret.png'
-import Jamgruppen from '../../img/Jamgruppen.png'
-import Lettpt from '../../img/Lettpt.png'
-import PR from '../../img/PR.png'
-import Revygruppen from '../../img/Revygruppen.png'
-import Tidsskriftet from '../../img/Tidsskriftet.png'
-import Turgruppen from '../../img/Turgruppen.png'
+import { Arkitekthjelpen, ArrKom, Bevern, Bryggegruppen, Connect, Hoeychoret, Jamgruppen, Lettpt, PR, Revygruppen, Tidsskriftet, Turgruppen } from 'Images';
 
 
 export const Groups = () => {
@@ -27,7 +16,7 @@ export const Groups = () => {
                 trinnene og er en arena for å møte andre medstudenter! Se mer om de forskjellige gruppene på gruppens egen side.
             </div>
             <div className="group-box-container page-content">
-                <Box title="ArrKom" path={path("arrkom")} thumbnail={Arrkom}/>
+                <Box title="ArrKom" path={path("arrkom")} thumbnail={ArrKom}/>
                 <Box title="ArkitektTUR" path={path("tur")} thumbnail={Turgruppen}/>
                 <Box title="Arkitekt-hjelpen" path={path("hjelpen")} thumbnail={Arkitekthjelpen}/>
                 <Box title="Brygge-gruppa" path={path("brygge")} thumbnail={Bryggegruppen}/>

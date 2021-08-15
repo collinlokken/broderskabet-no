@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledPage, Sponsors } from './pages.styled'
-import sponsor from '../../img/sponsorer.png'
+import { Sponsorer } from 'Images'
 
 
 export const Base = (props) => {
@@ -8,7 +8,7 @@ export const Base = (props) => {
         <StyledPage>
             { props.children }
             <Sponsors>
-                <img src={sponsor} alt="sponsor line"/>
+                <img src={Sponsorer} alt="sponsor line"/>
             </Sponsors>
         </StyledPage>
     );

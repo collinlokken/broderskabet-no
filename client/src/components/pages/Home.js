@@ -1,6 +1,6 @@
 import React from 'react';
 import{ HomeImage } from './pages.styled'
-import Forsidebilde from '../../img/Forsidebilde-crop.png'
+import { Forsidebilde } from 'Images'
 
 export const Home = () => {
     return (
