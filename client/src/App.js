@@ -4,6 +4,7 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { useRoutes } from 'hookrouter';
 import routes from './router';
+import { PageNotFound } from 'Components'
 
 import { Burger, Menu, Navbar } from 'Components';
 
@@ -23,7 +24,7 @@ function App() {
             <Menu open={open} setOpen={setOpen} />
           </div>
           
-          {routeResult}
+          {routeResult || <PageNotFound />}
       </div>
     </ThemeProvider>
   );

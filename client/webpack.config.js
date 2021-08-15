@@ -5,12 +5,15 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'index.bundle.js'
+        filename: 'index.bundle.js',
+        publicPath: '/'
     },
     devServer: {
         host: '127.0.0.1',
         port: 3000,
-        watchContentBase: true
+        watchContentBase: true,
+        open: true,
+        historyApiFallback: true
     },
     module: {
         rules: [
