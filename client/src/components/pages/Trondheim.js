@@ -1,6 +1,6 @@
 import React from 'react';
-import { ThreePartTemplate, HomeImagePage } from './pages.styled'
-import { Forsidebilde } from 'Images'
+import { ThreePartTemplate } from './pages.styled'
+import { NyITrondheim } from 'Images'
 
 
 export const Trondheim = () => {
@@ -28,9 +28,9 @@ export const Trondheim = () => {
                     På Stripa finner man også kantine, kiosk, cafe og bokhandel.
                 </p>
             </div>
-            <HomeImagePage>
-                <img src={Forsidebilde} alt="sketch of boy and girl"/>
-            </HomeImagePage>
+            <div className="page-content">
+                <img src={NyITrondheim} alt="Trondheim oversikt"/>
+            </div>
         </ThreePartTemplate>
     );
 };

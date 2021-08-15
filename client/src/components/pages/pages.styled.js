@@ -55,7 +55,6 @@ export const HomeImagePage = styled.div`
 `
 
 export const ThreePartTemplate = styled.div`
-    margin-top: 2rem;
     width: 90vw;
     display: flex;
     flex-direction: row;
@@ -66,7 +65,7 @@ export const ThreePartTemplate = styled.div`
         width: 10vw
     }
     .page-text {
-        padding: 0 5vw;
+        padding: 0 3vw;
         width: ${({textWidth}) => `${textWidth}vw`}
     }
     .page-text-segment {
@@ -78,7 +77,7 @@ export const ThreePartTemplate = styled.div`
     }
     .page-content img {
         width: 100%;
-        padding: 0 6vw;
+        padding: 0 3vw;
     }
     .page-cards {
         width: 70vw;
@@ -108,10 +107,10 @@ export const ThreePartTemplate = styled.div`
         }
         .page-content {
             width: 100%;
+            margin: 2rem 0;
         }
         .page-text {
             width: 100%;
-            margin: 2rem 0;
         }
         .page-cards {
             width: 90vw;

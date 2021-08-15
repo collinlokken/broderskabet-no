@@ -1,17 +1,21 @@
+// Annet
+export const Forsidebilde = require('Images/Forsidebilde-crop.png');
+export const Sponsorer = require('Images/sponsorer.png');
+export const B_sort = require('Images/B_sort.png');
+export const NyITrondheim = require('Images/nyitrondheimoversikt.png');
+
+
 // Undergrupper
 export const Arkitekthjelpen = require('Images/Arkitekthjelpen.png');
 export const ArrKom = require('Images/Arrkom.png');
-export const B_sort = require('Images/B_sort.png');
 export const Bevern = require('Images/Bevern.png');
 export const Bryggegruppen = require('Images/Bryggegruppen.png');
 export const Connect = require('Images/Connect.png');
-export const Forsidebilde = require('Images/Forsidebilde-crop.png');
 export const Hoeychoret = require('Images/Hoeychoret.png');
 export const Jamgruppen = require('Images/Jamgruppen.png');
 export const Lettpt = require('Images/Lettpt.png');
 export const PR = require('Images/Pr.png');
 export const Revygruppen = require('Images/Revygruppen.png');
-export const Sponsorer = require('Images/sponsorer.png');
 export const Tidsskriftet = require('Images/Tidsskriftet.png');
 export const Turgruppen = require('Images/Turgruppen.png');
 

@@ -15,7 +15,7 @@ export const Connect = () => {
                 som studentene ønsker seg utenfra.
             </p>
             <p> 
-                Lederen til Connect sitter i Collegiet og velges inn ved generalforsamlingen, mens øvrige stilligner vil bli lyst ut i
+                <a href="/collegiet#Troldquinde">Lederen</a> til Connect sitter i Collegiet og velges inn ved generalforsamlingen, mens øvrige stilligner vil bli lyst ut i
                 løpet av høsten. Bli med da vel!
             </p>
         </div>

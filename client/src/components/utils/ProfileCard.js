@@ -3,7 +3,7 @@ import { StyledProfileCard, StyledImage } from './ProfileCard.styled';
 
 export const ProfileCard = (props) => {
     return (
-        <StyledProfileCard>
+        <StyledProfileCard id={props.medlem.tittel}>
             <div className="profile-left">
                 <StyledImage thumbnail={props.thumbnail}/>
                 <div className="contact-info">
