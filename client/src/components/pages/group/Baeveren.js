@@ -1,4 +1,5 @@
 import React from 'react';
+import {Bevern1, Bevern2} from 'Images';
 
 export const Baeveren = () => {
     return (
@@ -22,6 +23,10 @@ export const Baeveren = () => {
             <p>
                 Se mer på vår <a href="https://www.facebook.com/BaevernsBK/år">FaceBook-side</a>. 
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Bevern1} alt=""/>
+            <img src={Bevern2} alt=""/>
         </div>
         </>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Pr1, Pr2 } from 'Images';
 
 export const Pr = () => {
     return (
@@ -13,6 +14,10 @@ export const Pr = () => {
             <p> 
                 Dette er en nokså ny gruppe som kommer til å utlyse flere spennende stillinger i løpet av høsten. Ønsker du å lære deg eller bli bedre på design, layout, redigering av bilder eller kanskje til og med på å lage filmer er denne gruppen midt i blinken for deg!
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Pr1} alt=""/>
+            <img src={Pr2} alt=""/>
         </div>
         </>
     );

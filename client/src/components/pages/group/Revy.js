@@ -1,4 +1,5 @@
 import React from 'react';
+import { Revy1, Revy2, Revy3, Revy4 } from 'Images';
 
 export const Revy = () => {
     return (
@@ -19,6 +20,12 @@ export const Revy = () => {
             <p>
                 Ikke la muligheten går fra deg. Bli med på moroa da vell!
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Revy1} alt=""/>
+            <img src={Revy2} alt=""/>
+            <img src={Revy3}alt=""/>
+            <img src={Revy4} alt=""/>
         </div>
         </>
     );

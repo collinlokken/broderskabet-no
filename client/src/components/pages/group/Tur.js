@@ -1,4 +1,5 @@
 import React from 'react';
+import { Tur1, Tur2, Tur3, Tur4 } from 'Images';
 
 export const Tur = () => {
     return (
@@ -21,6 +22,12 @@ export const Tur = () => {
             <p>
                 Ønsker du å engasjere deg i ArkitekTUR? Følg med når opptaket kommer i løpet av høstsemesteret!
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Tur1} alt=""/>
+            <img src={Tur2} alt=""/>
+            <img src={Tur3} alt=""/>
+            <img src={Tur4} alt=""/>
         </div>
         </>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Choret1, Choret2, Choret3, Choret4 } from 'Images';
 
 export const Choret = () => {
     return (
@@ -16,6 +17,12 @@ export const Choret = () => {
             <p>
                 Hoeychoret tar i mot alle med åpne armer og inviterer med et kakestykke eller to på hver øving.
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Choret1} alt=""/>
+            <img src={Choret2} alt=""/>
+            <img src={Choret3} alt=""/>
+            <img src={Choret4} alt=""/>
         </div>
         </>
     );

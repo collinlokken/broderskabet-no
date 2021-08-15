@@ -1,4 +1,5 @@
 import React from 'react';
+import { Jam1 } from 'Images';
 
 export const Jam = () => {
     return (
@@ -24,6 +25,9 @@ export const Jam = () => {
                 PA – Yamaha Stagepass 400i<br />
                 + et keyboard vi fant, usikker på modell!<br />
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Jam1} alt=""/>
         </div>
         </>
     );

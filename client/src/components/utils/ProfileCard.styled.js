@@ -23,7 +23,7 @@ export const StyledProfileCard = styled.div`
     }
     .profile-right {
         width: 33%;
-        height: 40vw;
+        max-height: 492px;
         flex-grow: 1;
         padding: 10px;
         overflow-y: auto;

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Forsidebilde } from 'Images';
 
 export const ArrKom = () => {
     return (
         <>
         <div className="page-title">
-            Arrangementkomiteen
+            Arrangement-komiteen
         </div>
         <div className="page-text">
             <p>
@@ -17,6 +18,9 @@ export const ArrKom = () => {
                 Har en kul idé til en fest? Gått på bartenderskole på Bali? Dyktig til å rigge lys, lyd og dekorere lokale? En proff på å
                 lage quiz? Eller rett og slett bare vil være med i en sosial gruppe? Da er er Arrkom gruppen for deg! 
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Forsidebilde} alt=""/>
         </div>
         </>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Skriftet1, Skriftet2, Skriftet3, Skriftet4 } from 'Images'
 
 export const Tidsskriftet = () => {
     return (
@@ -29,6 +30,12 @@ export const Tidsskriftet = () => {
                 For mer informsjon, se våre nettsider: www.tidsskrifteta.no
 
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Skriftet1} alt=""/>
+            <img src={Skriftet2} alt=""/>
+            <img src={Skriftet3} alt=""/>
+            <img src={Skriftet4} alt=""/>
         </div>
         </>
     );

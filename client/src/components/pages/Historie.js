@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThreePartTemplate, HomeImagePage } from './pages.styled'
-import { Forsidebilde } from 'Images'
+import { Historie1, Historie2, Historie3 } from 'Images'
 
 
 export const Historie = () => {
@@ -69,9 +69,11 @@ export const Historie = () => {
                     i hevd og styrket, linjeforeningsspråket ble enda mer uforståelig, diskusjonene ble villere og festene varte enda litt lenger.
                 </p>
             </div>
-            <HomeImagePage>
-                <img src={Forsidebilde} alt="sketch of boy and girl"/>
-            </HomeImagePage>
+            <div className="page-content">
+                <img src={Historie1} alt=""/>
+                <img src={Historie2} alt=""/>
+                <img src={Historie3} alt=""/>
+            </div>
         </ThreePartTemplate>
     );
 };

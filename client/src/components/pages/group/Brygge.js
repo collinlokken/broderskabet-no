@@ -1,4 +1,5 @@
 import React from 'react';
+import { Brygge1 } from 'Images'
 
 export const Brygge = () => {
     return (
@@ -16,6 +17,9 @@ export const Brygge = () => {
                 I den siste tiden har gruppen dessverre ikke vært like aktiv som før, grunnet tap av lokaler. Hvis du har et lokale
                 hvor vi kan brygge er det bare å ta kontakt! Vi har alt som trengs av utstyr og dette kan lånes ut til gruppens medlemmer.
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Brygge1} alt=""/>
         </div>
         </>
     );

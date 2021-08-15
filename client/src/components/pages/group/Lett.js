@@ -1,4 +1,5 @@
 import React from 'react';
+import { Lett1 } from 'Images'
 
 export const Lett = () => {
     return (
@@ -16,6 +17,9 @@ export const Lett = () => {
                 Hvis du er interessert kan du også strikke vår helt egne Broderskabsgenser, se mer om den her (link til den egne siden om
                 genseren). Du kan nå undergruppen på <a href="mailto:lettpatrad@broderskabet.no">lettpatrad@broderskabet.no</a>.
             </p>
+        </div>
+        <div className="page-content">
+            <img src={Lett1} alt=""/>
         </div>
         </>
     );

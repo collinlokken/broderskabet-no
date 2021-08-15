@@ -65,7 +65,7 @@ export const ThreePartTemplate = styled.div`
         width: 10vw
     }
     .page-text {
-        padding: 0 3vw;
+        padding: 0 1.5vw 0 3vw;
         width: ${({textWidth}) => `${textWidth}vw`}
     }
     .page-text-segment {
@@ -77,7 +77,7 @@ export const ThreePartTemplate = styled.div`
     }
     .page-content img {
         width: 100%;
-        padding: 0 3vw;
+        padding: 0 3vw 0 1.5vw;
     }
     .page-cards {
         width: 70vw;
