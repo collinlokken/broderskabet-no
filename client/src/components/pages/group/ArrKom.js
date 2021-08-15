@@ -5,7 +5,7 @@ export const ArrKom = () => {
     return (
         <>
         <div className="page-title">
-            Arrangement-komiteen
+            ArrKom
         </div>
         <div className="page-text">
             <p>

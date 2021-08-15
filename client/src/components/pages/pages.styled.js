@@ -61,7 +61,7 @@ export const ThreePartTemplate = styled.div`
     justify-content: space-between;
     .page-title {
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: ${({fontWeight}) => fontWeight ? fontWeight : '600'};
         width: 10vw
     }
     .page-text {

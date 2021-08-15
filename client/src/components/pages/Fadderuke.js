@@ -17,8 +17,9 @@ export const Fadderuke = () => {
                     <img src={image} alt="program"/>
                 </div>
             </ThreePartTemplate>
-            <ThreePartTemplate textWidth={36} style={{marginTop: '2rem'}}>
+            <ThreePartTemplate fontWeight={500} textWidth={36} style={{marginTop: '2rem'}}>
                 <div className="page-title">
+                    Program
                 </div>
                 <div className="page-text">
                     <p>
