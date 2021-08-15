@@ -109,8 +109,12 @@ export const ThreePartTemplate = styled.div`
             width: 100%;
             margin: 2rem 0;
         }
+        .page-content img {
+            padding: 0 3vw;
+        }
         .page-text {
             width: 100%;
+            padding: 0 3vw;
         }
         .page-cards {
             width: 90vw;

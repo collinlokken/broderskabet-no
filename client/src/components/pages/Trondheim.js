@@ -27,6 +27,9 @@ export const Trondheim = () => {
                     I Stripa i sentralbygget er der man har det meste av undervisningen i auditorium, med tegnesalene ovenfor.
                     På Stripa finner man også kantine, kiosk, cafe og bokhandel.
                 </p>
+                <p>
+                    Kontoret til broderskabet finner du <a href="https://link.mazemap.com/De4QNoe0" target="_blank">her</a>.
+                </p>
             </div>
             <div className="page-content">
                 <img src={NyITrondheim} alt="Trondheim oversikt"/>
