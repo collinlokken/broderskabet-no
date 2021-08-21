@@ -24,15 +24,15 @@ export const Kontakt = () => {
                 <div className="page-text-segment">
                     <b>Undergrupper</b>
                     <p>Tidsskriftet A: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Arkitekthjelpen: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Connect: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Hoeychoret: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Arrangementsgruppen: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Arkitekt TUR: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Bryggegruppen: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Bævern's Balljklubb: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Lett på Tråd: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
-                    <p>Revygruppen: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a></p>
+                    <p>Arkitekthjelpen: <a href="mailto:post@arkitekthjelpen.no">post@arkitekthjelpen.no</a></p>
+                    <p>Connect: <a href="mailto:connect@broderskabet.no">connect@broderskabet.no</a></p>
+                    <p>Hoeychoret: <a href="mailto:hoeychoret@broderskabet.no">hoeychoret@broderskabet.no</a></p>
+                    <p>Arrangementsgruppen: <a href="mailto:ceremonimester@broderskabet.no">ceremonimester@broderskabet.no</a></p>
+                    <p>Arkitekt TUR: <a href="mailto:tur@broderskabet.no">tur@broderskabet.no</a></p>
+                    <p>Bryggegruppen: <a href="mailto:brygg@broderskabet.no">brygg@broderskabet.no</a></p>
+                    <p>Bævern's Balljklubb: <a href="mailto:BB@broderskabet.no">BB@broderskabet.no</a></p>
+                    <p>Lett på Tråd: <a href="mailto:lettpatrad@broderskabet.no">lettpatrad@broderskabet.no</a></p>
+                    <p>Revygruppen: <a href="mailto:revy@broderskabet.no">revy@broderskabet.no</a></p>
                 </div>
                 <div className="page-text-segment">
                     <b>Post</b>
