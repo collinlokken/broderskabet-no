@@ -6,13 +6,22 @@ export const StyledNavbar = styled.nav`
     .nav-link-container {
         display: None;
     }
-    margin: 0 auto;
-    margin-top: 2rem;
+    margin: auto;
   }
-  width: 94vw;
+  width: 98vw;
+  height: 14vh;
+  min-height: 85px;
+  padding: 2vw;
+
+  position: fixed;
+  top: 0;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 12px -12px #00000026;
   a {
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -36,6 +45,10 @@ export const StyledNavbar = styled.nav`
     flex-direction: column;
     justify-content: center;
     padding: 0 1rem;
+  }
+  .logo-nav-element {
+    height: 60px;
+    margin: auto 0;
   }
   
 `;

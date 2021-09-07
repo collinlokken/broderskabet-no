@@ -9,13 +9,12 @@ export const Hjelpen = () => {
         </div>
         <div className="page-text">
             <p>
-                Er du interessert i øl og ønsker å vite hvordan den bli laget? Er du ølkjenner eller bare glad i å smake og drikke øl?
-                Bli med i Broderskabets Bryggegruppe! Gruppen samles for å brygge øl og så klart drikke den i godt selskap, og er åpen
-                for alle medlemmer av linjeforeningen. 
+                Arkitekthjelpen har som mål å formidle arkitektur til folket. Hvis du engasjerer deg i denne undergruppen vil du allerede fra
+                førsteklasse ha mulighet til å være med på rådgivninger med privatpersoner reelle prosjekter, det kan være alt fra en garasje
+                til et tilbygg. For mer informasjon om arkitekthjelpen og hva de gjør, klikk deg inn på nettsiden deres <a href="https://www.arkitekthjelpen.no/">her</a>
             </p>
             <p>
-                I den siste tiden har gruppen dessverre ikke vært like aktiv som før, grunnet tap av lokaler. Hvis du har et lokale
-                hvor vi kan brygge er det bare å ta kontakt! Vi har alt som trengs av utstyr og dette kan lånes ut til gruppens medlemmer.
+                Ta gjerne kontakt for spørsmål eller ønsker på <a href="mailto:Post@arkitekthjelpen.no">Post@arkitekthjelpen.no</a>
             </p>
         </div>
         <div className="page-content">

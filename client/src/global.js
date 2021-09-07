@@ -32,17 +32,6 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     flex-direction: column
   }
-  .nav-bar {
-    width: 98vw;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    height: 14vh;
-    backdrop-filter: blur(5px);
-    padding: 2vw;
-    box-shadow: 0 15px 12px -12px #00000026;
-  }
   @media (min-width: ${({ theme }) => theme.mobile}) {
     .burger-menu{
       display: None;

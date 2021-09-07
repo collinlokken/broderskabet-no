@@ -4,7 +4,7 @@ import { Forsidebilde } from 'Images'
 
 export const GroupBase = (props) => {
     return (
-        <ThreePartTemplate textWidth={40}> {/* Needs three children */}
+        <ThreePartTemplate textWidth={36}> {/* Needs three children */}
             {props.content}
         </ThreePartTemplate>
     );

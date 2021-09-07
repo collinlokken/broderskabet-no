@@ -16,9 +16,7 @@ function App() {
     <ThemeProvider theme={theme}>
         <GlobalStyles />
         <div className="App">
-          <div className="nav-bar">
-            <Navbar />
-          </div>
+          <Navbar />
           <div className="burger-menu">
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
