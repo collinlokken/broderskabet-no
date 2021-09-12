@@ -73,13 +73,18 @@ export const ThreePartTemplate = styled.div`
         margin-bottom: 2rem;
     }
     .page-content {
-        max-width: 40vw;
-        flex-grow: 0;
+        width: 40vw;
     }
     .page-content img {
-        max-width: 100%;
-        max-height: 681px;
+        width: 100%;
         padding: 0 3vw 0 1.5vw;
+    }
+    .page-front {
+        max-width: calc(${({textWidth}) => `${textWidth}vw`} + 40vw);
+    }
+    .page-front img {
+        width: 100%;
+        padding: 0 3vw 0 3vw;
     }
     .page-cards {
         width: 70vw;
@@ -108,7 +113,7 @@ export const ThreePartTemplate = styled.div`
             margin-bottom: 6vw;
         }
         .page-content {
-            min-width: 100%;
+            width: 100%;
             margin: 2rem 0;
         }
         .page-content img {

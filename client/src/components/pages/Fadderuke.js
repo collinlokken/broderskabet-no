@@ -13,7 +13,7 @@ export const Fadderuke = () => {
                 <div className="page-title">
                     Fadderukene 2021
                 </div>
-                <div className="page-content">
+                <div className="page-front">
                     <img src={image} alt="program"/>
                 </div>
             </ThreePartTemplate>
