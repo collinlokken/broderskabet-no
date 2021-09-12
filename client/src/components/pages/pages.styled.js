@@ -81,6 +81,9 @@ export const ThreePartTemplate = styled.div`
     }
     .page-front {
         max-width: calc(${({textWidth}) => `${textWidth}vw`} + 40vw);
+        @media (max-width: ${({theme}) => theme.mobile}) {
+            max-width: 100%;
+        }
     }
     .page-front img {
         width: 100%;
