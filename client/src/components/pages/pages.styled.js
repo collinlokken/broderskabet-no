@@ -69,6 +69,11 @@ export const ThreePartTemplate = styled.div`
         padding: 0 1.5vw 0 3vw;
         width: ${({textWidth}) => `${textWidth}vw`}
     }
+    .page-text h2 {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #b3b3b3;
+    }
     .page-text-segment {
         margin-bottom: 2rem;
     }
