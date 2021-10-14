@@ -14,8 +14,7 @@ export const Lett = () => {
                 uansett om du er nybegynner som ønsker å lære å strikke eller godt erfaren!
             </p>
             <p> 
-                Hvis du er interessert kan du også strikke vår helt egne Broderskabsgenser, se mer om den her (link til den egne siden om
-                genseren). Du kan nå undergruppen på <a href="mailto:lettpatrad@broderskabet.no">lettpatrad@broderskabet.no</a>.
+                Hvis du er interessert kan du også strikke vår helt egne Broderskabsgenser, se oppskrift <a href="https://docplayer.me/194713826-Broderskabsgenseren-broderskabsgenseren-design-nanna-helland-berger.html">her</a> og tutorial <a href="https://www.youtube.com/playlist?list=PL3QmUHTcl3kg8PCq7Sp8U-5HlKS7nW_Vu">her</a>. Du kan nå undergruppen på <a href="mailto:lettpatrad@broderskabet.no">lettpatrad@broderskabet.no</a>.
             </p>
         </div>
         <div className="page-content">
