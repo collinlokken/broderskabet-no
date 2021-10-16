@@ -9,8 +9,7 @@ export const StyledFooter = styled.div`
     align-items: center;
     position: relative;
     bottom: 0;
-    z-index: -1;  /*go behind mobile menu*/
-
+    
     .footer-text {
         display: flex;
         flex-direction: column;
@@ -46,7 +45,7 @@ export const StyledFooter = styled.div`
             align-self: flex-end;
             width: 125px;
         }
-        
+
         i {
             font-size: 50px;
         }

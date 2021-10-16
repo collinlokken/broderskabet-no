@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
   display: None;
+  z-index: 9;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: flex;
     flex-direction: column;
