@@ -23,9 +23,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     text-rendering: optimizeLegibility;
   }
-  #root, .App{
-    height: 100%;
-  }
+
   .App {
     display: flex;
     justify-content: flex-start;
