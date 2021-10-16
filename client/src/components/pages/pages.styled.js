@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledPage = styled.div`
     padding: 0 2rem;
     margin-top: 17vh;
+    min-height: calc(100vh - 17vh - 6rem - 40px - 35px); /*minus height of navbar and footer*/
     width: fit-content;
     height: 100%;
     display: flex;
