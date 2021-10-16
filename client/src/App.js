@@ -6,7 +6,7 @@ import { useRoutes } from 'hookrouter';
 import routes from './router';
 import { Base, PageNotFound } from 'Components'
 
-import { Burger, Menu, Navbar } from 'Components';
+import { Burger, Menu, Navbar, Footer } from 'Components';
 
 
 function App() {
@@ -23,7 +23,9 @@ function App() {
           </div>
           
           {routeResult || <Base children={<PageNotFound />} /> }
-      </div>
+
+          <Footer />
+        </div>
     </ThemeProvider>
   );
 };
