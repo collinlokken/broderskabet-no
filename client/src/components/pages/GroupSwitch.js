@@ -2,9 +2,13 @@ import React from "react";
 import { GroupBase } from "./GroupBase";
 import { PageNotFound } from "./PageNotFound";
 import { ArrKom, Tur, Hjelpen, Brygge, Baeveren, Connect, Choret, Jam, Lett, Pr, Revy, Tidsskriftet } from "./group";
+import {
+    useParams
+} from "react-router-dom";
 
 export const GroupSwitch = (props) => {
-    switch (props.id) {
+    let { id } = useParams();
+    switch (id) {
         case "arrkom":
             return <GroupBase content ={<ArrKom />} />;
         case "tur":
