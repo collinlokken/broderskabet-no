@@ -34,7 +34,7 @@ export const Tidsskriftet = () => {
                 Vi kan nås på: <a href="mailto:post@tidsskrifteta.no">post@tidsskrifteta.no</a>
             </p>
             <p>
-                For mer informsjon, se våre nettsider: <a href="www.tidsskrifteta.no">www.tidsskrifteta.no</a>
+                For mer informsjon, se våre nettsider: <a href="https://www.tidsskrifteta.no">www.tidsskrifteta.no</a>
 
             </p>
         </div>

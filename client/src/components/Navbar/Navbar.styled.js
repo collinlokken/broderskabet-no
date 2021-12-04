@@ -20,7 +20,7 @@ export const StyledNavbar = styled.nav`
   flex-direction: row;
   justify-content: space-around;
 
-  backdrop-filter: blur(5px);
+  background-color: ${({theme}) => theme.primaryLight+'D9'};
   box-shadow: 0 15px 12px -12px #00000026;
   a {
     font-size: 0.8rem;
