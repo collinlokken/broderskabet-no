@@ -4,7 +4,7 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Route, Routes, Link } from 'react-router-dom';
 
-import { Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet, GroupSwitch, TempPage, PageNotFound, Burger, Menu, Navbar, Footer }  from 'Components';
+import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet, GroupSwitch, TempPage, PageNotFound, Burger, Menu, Navbar, Footer }  from 'Components';
 
 
 function App() {
@@ -14,37 +14,31 @@ function App() {
     <ThemeProvider theme={theme}>
         <GlobalStyles />
         <div className="App">
-        <HashRouter>
-
           <Navbar />
           <div className="burger-menu">
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
           </div>
-          <StyledPage>
-            <Routes>
-              <Route path="/" component={<Home/>} />
-              <Route path="/fadderuke" component={<Fadderuke/>} />
-              <Route path="/trondheim" component={<Trondheim/>} />
-              <Route path="/student" component={<Student/>} />
-              <Route path="/kontakt" component={<Kontakt/>} />
-              <Route path="/broderskabet" component={<About/>} />
-              <Route path="/undergrupper" component={<Groups/>} />
-              <Route path="/login" component={<TempPage/>} />
-              <Route path="/registrer" component={<TempPage/>} />
-              <Route path="/historie" component={<Historie/>} />
-              <Route path="/vedtekter" component={<Vedtekter/>} />
-              <Route path="/collegiet" component={<Collegiet/>} />
-              <Route path="/undergrupper/:id" component={<GroupSwitch/>} />
-              <Route component={<PageNotFound/>} />
-            </Routes>
-            <Sponsors>
-              <img src={Sponsorer} alt="sponsor line"/>
-            </Sponsors>
-          </StyledPage>
+          <Routes>
+            <Route path="/" element={<Base/>} >
+              <Route index element={<Home/>} />
+              <Route path="fadderuke" element={<Fadderuke/>} />
+              <Route path="trondheim" element={<Trondheim/>} />
+              <Route path="student" element={<Student/>} />
+              <Route path="kontakt" element={<Kontakt/>} />
+              {/*<Route path="broderskabet" element={<About/>} />*/}
+              <Route path="undergrupper" element={<Groups/>} />
+              <Route path="login" element={<TempPage/>} />
+              <Route path="registrer" element={<TempPage/>} />
+              <Route path="historie" element={<Historie/>} />
+              <Route path="vedtekter" element={<Vedtekter/>} />
+              <Route path="collegiet" element={<Collegiet/>} />
+              <Route path="undergrupper/:id" element={<GroupSwitch/>} />
+              <Route path="*" element={<PageNotFound/>} />
+            </Route>
+          </Routes>
 
           <Footer />
-        </HashRouter>
         </div>
     </ThemeProvider>
   );

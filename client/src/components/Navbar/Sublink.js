@@ -1,14 +1,14 @@
 import React from 'react';
-import { A } from 'hookrouter';
+import { Link } from 'react-router-dom';
 
 
 export const Sublink = ({link}) => {
     return (
         <li className="nav-link">
             <div className="sublink-container">
-                <A href={`/${link.path}`}>
+                <Link to={`/${link.path}`}>
                     {link.title}
-                </A>
+                </Link>
             </div>
         </li>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
-import { ThreePartTemplate } from './pages.styled'
+import { ThreePartTemplate } from './pages.styled';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Program, ProgramMobile, Pakkeliste, Fadderbarn} from 'Images'
 import useWindowSize from '../hooks/useWindowSize';
 import { emojies } from '../utils/HtmlEntities';
@@ -26,7 +27,7 @@ export const Fadderuke = () => {
                         Velkommen til Fadderukene for Arkitektstudentene ved NTNU! Vi i Borderskabet har gleden av å invitere deg til to av de beste ukene dette året.
                         Det første du må gjøre for å være sikker på at du får med deg alt av nyheter og oppdateringer angående fadderukene er å søke opp gruppen
                         “Arkitekt NTNU – kull ‘21” på <a href="https://www.facebook.com/groups/1323038871429037/?ref=share">facebook</a> og melde deg inn i den.
-                        Om du lurer på noe, kan du sende en mail til <a href="/collegiet#Novicekommandeur">Novicekommandeur</a> (faddersjefen) for Broderskabet.
+                        Om du lurer på noe, kan du sende en mail til <Link to="/collegiet#Novicekommandeur">Novicekommandeur</Link> (faddersjefen) for Broderskabet.
                     </p>
                     <p>
                         <b>Mandag 16.08 BOKSTAVFEST</b><br/>

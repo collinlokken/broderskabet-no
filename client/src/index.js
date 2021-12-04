@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { HashRouter } from 'react-router-dom';
-
 /*import * as serviceWorkerRegistration from 'serviceWorkerRegistration';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { persistWithLocalStorage } from 'react-query/persist-localstorage-experimental';
@@ -19,8 +18,9 @@ persistWithLocalStorage(queryClient);
 */
 ReactDOM.render(
   //<QueryClientProvider client={queryClient}>
-    //<App />,
-    <h3>hello</h3>,
+  <HashRouter>
+    <App />
+  </HashRouter>,
   //</QueryClientProvider>,
   document.getElementById('root')
 );

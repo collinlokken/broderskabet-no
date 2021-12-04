@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sublink } from './Sublink';
 import { StyledMenuElement, Button } from './Menu.styled';
-import { A } from 'hookrouter';
+import { Link } from 'react-router-dom';
 
 export const MenuElement = (props) => {
     const [toggle, setToggle] = useState(false)
@@ -16,9 +16,9 @@ export const MenuElement = (props) => {
                 { elements }
             </>
             : <Button onClick={()=>props.setOpen(false)}>
-                <A href={`/${props.links[0].path}`}>
+                <Link to={`/${props.links[0].path}`}>
                     {props.links[0].title}
-                </A>
+                </Link>
             </Button>
             } 
         </StyledMenuElement>

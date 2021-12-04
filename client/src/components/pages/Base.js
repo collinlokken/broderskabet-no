@@ -1,15 +1,13 @@
 import React from 'react';
 import { StyledPage, Sponsors } from './pages.styled'
 import { Sponsorer } from 'Images'
-import { useParams } from "react-router-dom";
-
-let { location } = useParams();
+import { Outlet } from "react-router-dom";
 
 export const Base = (props) => {
-    let { location } = useParams();
+
     return (
         <StyledPage>
-            { props.children }
+            <Outlet />
             <Sponsors>
                 <img src={Sponsorer} alt="sponsor line"/>
             </Sponsors>

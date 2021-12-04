@@ -1,5 +1,6 @@
 import React from 'react';
 import { Connect1, Connect2, Connect3, Connect4, Connect5 } from 'Images'
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const Connect = () => {
     return (
@@ -16,7 +17,7 @@ export const Connect = () => {
                 som studentene ønsker seg utenfra.
             </p>
             <p> 
-                <a href="/collegiet#Troldquinde">Lederen</a> til Connect sitter i Collegiet og velges inn ved generalforsamlingen, mens øvrige stilligner vil bli lyst ut i
+                <Link to="/collegiet#Troldquinde">Lederen</Link> til Connect sitter i Collegiet og velges inn ved generalforsamlingen, mens øvrige stilligner vil bli lyst ut i
                 løpet av høsten. Bli med da vel!
             </p>
         </div>

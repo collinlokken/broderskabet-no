@@ -12,10 +12,10 @@ export const Footer = () => {
             </div>
             <div className="some-container">
                 <a href="https://www.instagram.com/broderskabet/">
-                    <div className="some-item"><i class="fab fa-instagram-square"></i></div>
+                    <div className="some-item"><i className="fab fa-instagram-square"></i></div>
                 </a>
                 <a href="https://www.facebook.com/arkitektstudentenesbroderskab">
-                    <div className="some-item"><i class="fab fa-facebook"></i></div>
+                    <div className="some-item"><i className="fab fa-facebook"></i></div>
                 </a>
             </div>
         </StyledFooter>

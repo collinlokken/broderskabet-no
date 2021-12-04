@@ -1,13 +1,13 @@
 import React from 'react';
-import { A } from 'hookrouter';
+import { Link } from 'react-router-dom';
 
 
 export const Sublink = ({link, setOpen}) => {
     return (
         <div className="sublink-container" onClick={()=>setOpen(false)}>
-            <A href={`/${link.path}`}  className="sub-link">
+            <Link to={`/${link.path}`}  className="sub-link">
                 {link.title}
-            </A>
+            </Link>
         </div>
     );
 }

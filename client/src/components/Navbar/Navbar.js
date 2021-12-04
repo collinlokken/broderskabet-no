@@ -1,5 +1,5 @@
 import React from 'react';
-import { A } from 'hookrouter';
+import { Link } from 'react-router-dom';
 import { StyledNavbar, Logo } from './Navbar.styled';
 import { NavElement } from './NavElement';
 import { links } from '../utils/Links'
@@ -11,12 +11,12 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <div className="logo-nav-element">
-        <A href='/'>
+        <Link to='/'>
             <div className="logo-container">
                 <Logo />
                 <div className="logo-title"><span>Arkitektstudentenes</span> <span>Broderskab</span></div>
             </div>
-        </A>
+        </Link>
       </div>
       { elements }
     </StyledNavbar>
