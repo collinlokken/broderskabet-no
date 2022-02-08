@@ -19,6 +19,7 @@ function App() {
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
           </div>
+          {/* React router v6*/}
           <Routes>
             <Route path="/" element={<Base/>} >
               <Route index element={<Home/>} />

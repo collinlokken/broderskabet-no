@@ -156,4 +156,7 @@ export const StyledGroupPhoto = styled.div`
         width: 100%;
         height: 35vh;
     }
+    &:hover{
+        background-image: url(${({bg_alt}) => bg_alt});
+    }
 `

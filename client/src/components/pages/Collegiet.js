@@ -2,7 +2,7 @@ import React from 'react'
 import { ProfileCard } from '../utils/ProfileCard'
 import { ThreePartTemplate, StyledGroupPhoto } from './pages.styled'
 import useWindowSize from '../hooks/useWindowSize';
-import { blest, ceremoni, chroniker, novice, phinans, troldquinde, domina, vicedom, Felles } from 'Images'
+import { blest, blest_t, ceremoni, ceremoni_t, chroniker, chroniker_t, novice, novice_t, phinans, phinans_t, troldquinde, troldquinde_t, domina, domina_t, vicedom, vicedom_t, Felles, Felles_t} from 'Images'
 import { Blaestemester, Ceremonimester, Chronikeskriffuer, Domina, Novicekommandeur, Phinancephut, Troldquinden, Vicedominus } from 'Components/pages/Styret'
 
 export const Collegiet = () => {
@@ -14,7 +14,7 @@ export const Collegiet = () => {
                 Collegiet
             </div>
             <div className="page-cards">
-                { isMobile && <StyledGroupPhoto background={Felles}/>}
+                { isMobile && <StyledGroupPhoto background={Felles} bg_alt={Felles_t}/>}
                 <div className="about">
                     <p>
                     Collegiet er hovedstyret i Broderskabet og fungerer som det øverste organ i linjeforeningen. Collegiet står for den daglige driften av linjeforeningen og holder ukentlige møter på Broderskabskontoret. En gang i måneden avholdes det UGLE-møte (undergruppeleder-møte), der Collegiet og undergruppelederne kommer sammen for å samkjøre driften i Broderskabet og diskutere viktige saker.
@@ -29,15 +29,15 @@ export const Collegiet = () => {
                     For mer informasjon om de forskjellige stillingene i Collegiet og kontaktinformasjon, se deres egne sider.
                     </p>
                 </div>
-                { !isMobile && <StyledGroupPhoto background={Felles}/>}
-                <ProfileCard thumbnail={domina} medlem={Domina}/>
-                <ProfileCard thumbnail={vicedom} medlem={Vicedominus}/>
-                <ProfileCard thumbnail={blest} medlem={Blaestemester}/>
-                <ProfileCard thumbnail={ceremoni} medlem={Ceremonimester}/>
-                <ProfileCard thumbnail={chroniker} medlem={Chronikeskriffuer}/>
-                <ProfileCard thumbnail={novice} medlem={Novicekommandeur}/>
-                <ProfileCard thumbnail={phinans} medlem={Phinancephut}/>
-                <ProfileCard thumbnail={troldquinde} medlem={Troldquinden}/>
+                { !isMobile && <StyledGroupPhoto background={Felles} bg_alt={Felles_t}/>}
+                <ProfileCard thumbnail={domina} thumbnail_alt={domina_t} medlem={Domina}/>
+                <ProfileCard thumbnail={vicedom} thumbnail_alt={vicedom_t} medlem={Vicedominus}/>
+                <ProfileCard thumbnail={blest} thumbnail_alt={blest_t} medlem={Blaestemester}/>
+                <ProfileCard thumbnail={ceremoni} thumbnail_alt={ceremoni_t} medlem={Ceremonimester}/>
+                <ProfileCard thumbnail={chroniker} thumbnail_alt={chroniker_t} medlem={Chronikeskriffuer}/>
+                <ProfileCard thumbnail={novice} thumbnail_alt={novice_t} medlem={Novicekommandeur}/>
+                <ProfileCard thumbnail={phinans} thumbnail_alt={phinans_t} medlem={Phinancephut}/>
+                <ProfileCard thumbnail={troldquinde} thumbnail_alt={troldquinde_t} medlem={Troldquinden}/>
             </div>
         </ThreePartTemplate>
     )

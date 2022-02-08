@@ -25,15 +25,24 @@ export const ProgramMobile = require('Images/fadderuka/program-mobile.jpg');
 export const Program = require('Images/fadderuka/program.jpg');
 
 // Collegiet
-export const blest = require('Images/collegiet/Blest.jpg');
-export const ceremoni = require('Images/collegiet/Ceremoni.jpg');
-export const chroniker = require('Images/collegiet/Chroniker.jpg');
+export const blest = require('Images/collegiet/Blestemester.jpg');
+export const blest_t = require('Images/collegiet/Blestemester_tullebilde.jpg');
+export const ceremoni = require('Images/collegiet/Ceremonimester.jpg');
+export const ceremoni_t = require('Images/collegiet/Ceremonimester_tullebilde.jpg');
+export const chroniker = require('Images/collegiet/Chronikeskriffuer.jpg');
+export const chroniker_t = require('Images/collegiet/Chronikeskriffuer_tullebilde.jpg');
 export const domina = require('Images/collegiet/Domina.jpg');
-export const novice = require('Images/collegiet/Novice.jpg');
-export const phinans = require('Images/collegiet/Phinans.jpg');
+export const domina_t = require('Images/collegiet/Domina_tullebilde.jpg');
+export const novice = require('Images/collegiet/Novicekommandeur.jpg');
+export const novice_t = require('Images/collegiet/Novicekommandeur_tullebilde.jpg');
+export const phinans = require('Images/collegiet/Phinancephut.jpg');
+export const phinans_t = require('Images/collegiet/Phinancephut_tullebilde.jpg');
 export const troldquinde = require('Images/collegiet/Troldquinde.jpg');
-export const vicedom = require('Images/collegiet/Vicedom.jpg');
-export const Felles = require('Images/collegiet/1felles.jpeg');
+export const troldquinde_t = require('Images/collegiet/Troldquinde_tullebilde.jpg');
+export const vicedom = require('Images/collegiet/Vicedomina.jpg');
+export const vicedom_t = require('Images/collegiet/Vicedomina_tullebilde.jpg');
+export const Felles = require('Images/collegiet/Collegiet.jpg');
+export const Felles_t = require('Images/collegiet/Collegiet_tullebilde.jpg');
 
 // Historie
 export const Historie1 = require('Images/historie/historie1.jpg');

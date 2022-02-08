@@ -27,6 +27,7 @@ export const StyledProfileCard = styled.div`
         flex-grow: 1;
         padding: 10px;
         overflow-y: auto;
+        overflow-x: visible;
     }
     .contact-info {
         padding: 5px;
@@ -44,7 +45,7 @@ export const StyledProfileCard = styled.div`
             height: 70vw;
             box-shadow: inset 0px 10px 12px -12px #00000054;
         }
-    } 
+    }
 `
 
 export const StyledImage = styled.div`
