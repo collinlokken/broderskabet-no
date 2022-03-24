@@ -52,12 +52,14 @@ export const StyledImage = styled.div`
     background-image: url(${({thumbnail}) => thumbnail});
     background-position: center;
     background-size: cover;
-    border: 1px solid #00000029;
     margin: 0 auto;
     width: 100%;
-    height: 20vw;
+    height: ${({currentPhoto, thisPhoto})=> currentPhoto==thisPhoto? "calc(35vw / 2)" : "0.1px"};
     box-shadow: inset 15px 15px 12px 0 #00000054, inset -15px -15px 12px 0 #00000054;
+    border-radius: 0px;
+    transition: opacity 0s linear;
     @media (max-width: ${({theme}) => theme.mobile}) {
         height: 70vw;
     }
+
 `

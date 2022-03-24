@@ -3,13 +3,13 @@ import { StyledProfileCard, StyledImage } from './ProfileCard.styled';
 
 export const ProfileCard = (props) => {
     const [currentPhoto, setCurrentPhoto] = useState(0);
-    
     return (
         <StyledProfileCard id={props.medlem.tittel}>
             <div className="profile-left">
-                {currentPhoto
-                ? <StyledImage thumbnail={props.thumbnail_alt} onMouseLeave={() => setCurrentPhoto(0)}/>
-                : <StyledImage thumbnail={props.thumbnail} onMouseEnter={() => setCurrentPhoto(1)}/> }
+                <div onMouseLeave={()=>setCurrentPhoto(0)} onMouseEnter={()=>setCurrentPhoto(1)}>
+                    <StyledImage thumbnail={props.thumbnail} currentPhoto={currentPhoto} thisPhoto={0} />
+                    <StyledImage thumbnail={props.thumbnail_alt} currentPhoto={currentPhoto} thisPhoto={1} />
+                </div>
                 <div className="contact-info">
                     <p><b>Kontaktinfo</b></p>
                     <p>Telefon: {props.medlem.telefon}</p>

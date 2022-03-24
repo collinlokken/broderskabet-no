@@ -16,10 +16,8 @@ export const Kontakt = () => {
                 </div>
                 <div className="page-text-segment">
                     <b>Bedrift?</b>
-                    <p>Bedrifter som ønsker å ta kontakt med Broderskabet kan henvende seg til vår bedriftskontakt Rikke Eftang Meinich via:</p>
+                    <p>Bedrifter som ønsker å ta kontakt med Broderskabet kan henvende seg til vår bedriftskontakt Mali Ulfsen Horten via:</p>
                     <p>Mail: <a href="bedriftskontakt@broderskabet.no">bedriftskontakt@broderskabet.no</a></p>
-                    <p>Mail: <a href="rikkeeme@stud.ntnu.no">rikkeeme@stud.ntnu.no</a></p>
-                    <p>Tlf: <a href="tel:004794158085">+47 94158085</a></p>
                 </div>
                 <div className="page-text-segment">
                     <b>Undergrupper</b>

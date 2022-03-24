@@ -143,20 +143,17 @@ export const ThreePartTemplate = styled.div`
 `
 
 export const StyledGroupPhoto = styled.div`
-    background-image: url(${({background}) => background});
+    background-image: url(${({thumbnail}) => thumbnail});
     background-position: center;
     background-size: cover;
-    margin: 2vh 1vw 2vh 1vw;
+    margin: 0vh 1vw 0vh 1vw;
     width: 35vw;
     flex-grow: 1;
+    height: ${({currentPhoto, thisPhoto})=> currentPhoto==thisPhoto? "400px" : "0.1px"};
     box-shadow: inset 15px 15px 12px 0 #00000054, inset -15px -15px 12px 0 #00000054;
-    border: 1px solid #00000029;
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-flow: column nowrap;
         width: 100%;
-        height: 35vh;
-    }
-    &:hover{
-        background-image: url(${({bg_alt}) => bg_alt});
+        height: ${({currentPhoto, thisPhoto})=> currentPhoto==thisPhoto? "35vh" : "0.1px"};
     }
 `

@@ -11,7 +11,7 @@ export const Vicedominus = {
     telefon: "90476790",
     email:"vicedominus@broderskabet.no",
     tekst:"Som nestleder bistår Ingrid Domina, og resten av Collegiet i den daglige driften av Broderskabet. Hun stiller opp når det er noe de andre styremedlemmene trenger hjelp med, og fungerer som stedfortreder for Domina når hun er borte. I tillegg arrangerer hun det månedlige UGLE-møtet (UGLE: undergruppeledere), og jobber for å få til et godt samarbeid med undergruppene.",
-    tittel:"Vicedominus",
+    tittel:"Vicedomina",
     navn:"Ingrid Eline Øverby",
     beskrivelse:"Vicedomina/Vicedominus er neest oeverste leder, Domina/Dominus Hoeyre Haand og Staedfortreder."
 }
@@ -46,7 +46,7 @@ export const Chronikeskriffuer = {
 export const Novicekommandeur = {
     telefon: "47601338",
     email:"novicekommandeur@broderskabet.no",
-    tekst:"Faddersjefen har hovedansvar for å arrangere fadderukene, og står for struktureringen av fadderopplegget. Ingrid rekrutterer og organiserer faddere, og delegerer ansvaret for arrangementer til de ulike faddergruppene. Hun lager budsjettforslag før fadderukene, og holder oversikt over innkjøp i denne perioden. Sist, men ikke minst har han ansvar for å skape goood stemning, og gi et godt førsteinntrykk til de nye arkitektstudentene!",
+    tekst:"Faddersjefen har hovedansvar for å arrangere fadderukene, og står for struktureringen av fadderopplegget. Ingrid Marie rekrutterer og organiserer faddere, og delegerer ansvaret for arrangementer til de ulike faddergruppene. Hun lager budsjettforslag før fadderukene, og holder oversikt over innkjøp i denne perioden. Sist, men ikke minst har han ansvar for å skape goood stemning, og gi et godt førsteinntrykk til de nye arkitektstudentene!",
     tittel:"Novicekommandeur",
     navn:"Ingrid Marie Sæther Halbjørhus",
     beskrivelse:"Novicekommandeuren er Broderskabets phunisöse/phunisöer og arrangerer de mange phestlighæder foer Phuniseringen medio Septembris."
