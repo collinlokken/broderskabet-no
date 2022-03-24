@@ -110,6 +110,11 @@ export const ThreePartTemplate = styled.div`
             width: 100%;
         }
     }
+    .group-photo-container {
+        @media (max-width: ${({theme}) => theme.mobile}) {
+            width: 100%;
+        }
+    }
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-direction: column;
         .page-title {

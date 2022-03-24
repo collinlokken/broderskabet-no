@@ -59,7 +59,7 @@ export const StyledImage = styled.div`
     border-radius: 0px;
     transition: opacity 0s linear;
     @media (max-width: ${({theme}) => theme.mobile}) {
-        height: 70vw;
+        height: ${({currentPhoto, thisPhoto})=> currentPhoto==thisPhoto? "70vw" : "0.1px"};
     }
 
 `

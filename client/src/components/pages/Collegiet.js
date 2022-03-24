@@ -25,7 +25,10 @@ export const Collegiet = () => {
             </div>
             <div className="page-cards">
                 { isMobile &&
-                <div onMouseLeave={()=>setCurrentPhoto(0)} onMouseEnter={()=>setCurrentPhoto(1)}>
+                <div className="group-photo-container"
+                    onTouchEnd={()=>setCurrentPhoto(0)}
+                    onTouchStart={()=>setCurrentPhoto(1)}
+                >
                     <StyledGroupPhoto thumbnail={Felles} currentPhoto={currentPhoto} thisPhoto={0}/>
                     <StyledGroupPhoto thumbnail={Felles_t} currentPhoto={currentPhoto} thisPhoto={1}/>
                 </div>}
@@ -44,18 +47,21 @@ export const Collegiet = () => {
                     </p>
                 </div>
                 { !isMobile &&
-                <div onMouseLeave={()=>setCurrentPhoto(0)} onMouseEnter={()=>setCurrentPhoto(1)}>
+                <div className="group-photo-container"
+                    onMouseLeave={()=>setCurrentPhoto(0)}
+                    onMouseEnter={()=>setCurrentPhoto(1)}
+                >
                     <StyledGroupPhoto thumbnail={Felles} currentPhoto={currentPhoto} thisPhoto={0}/>
                     <StyledGroupPhoto thumbnail={Felles_t} currentPhoto={currentPhoto} thisPhoto={1}/>
                 </div>}
                 <ProfileCard thumbnail={domina} thumbnail_alt={domina_t} medlem={collegiemedlem.filter(e => e.id==1)[0]}/>
                 <ProfileCard thumbnail={vicedom} thumbnail_alt={vicedom_t} medlem={collegiemedlem.filter(e => e.id==2)[0]}/>
+                <ProfileCard thumbnail={troldquinde} thumbnail_alt={troldquinde_t} medlem={collegiemedlem.filter(e => e.id==8)[0]}/>
                 <ProfileCard thumbnail={blest} thumbnail_alt={blest_t} medlem={collegiemedlem.filter(e => e.id==3)[0]}/>
                 <ProfileCard thumbnail={ceremoni} thumbnail_alt={ceremoni_t} medlem={collegiemedlem.filter(e => e.id==4)[0]}/>
                 <ProfileCard thumbnail={chroniker} thumbnail_alt={chroniker_t} medlem={collegiemedlem.filter(e => e.id==5)[0]}/>
                 <ProfileCard thumbnail={novice} thumbnail_alt={novice_t} medlem={collegiemedlem.filter(e => e.id==6)[0]}/>
                 <ProfileCard thumbnail={phinans} thumbnail_alt={phinans_t} medlem={collegiemedlem.filter(e => e.id==7)[0]}/>
-                <ProfileCard thumbnail={troldquinde} thumbnail_alt={troldquinde_t} medlem={collegiemedlem.filter(e => e.id==8)[0]}/>
             </div>
         </ThreePartTemplate>
     )

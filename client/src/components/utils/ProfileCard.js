@@ -6,7 +6,10 @@ export const ProfileCard = (props) => {
     return (
         <StyledProfileCard id={props.medlem.tittel}>
             <div className="profile-left">
-                <div onMouseLeave={()=>setCurrentPhoto(0)} onMouseEnter={()=>setCurrentPhoto(1)}>
+                <div onMouseLeave={()=>setCurrentPhoto(0)}
+                     onTouchEnd={()=>setCurrentPhoto(0)}
+                     onTouchStart={()=>setCurrentPhoto(1)}
+                     onMouseEnter={()=>setCurrentPhoto(1)} >
                     <StyledImage thumbnail={props.thumbnail} currentPhoto={currentPhoto} thisPhoto={0} />
                     <StyledImage thumbnail={props.thumbnail_alt} currentPhoto={currentPhoto} thisPhoto={1} />
                 </div>
