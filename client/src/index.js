@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { HashRouter } from 'react-router-dom';
-/*import * as serviceWorkerRegistration from 'serviceWorkerRegistration';
+import registerServiceWorker from 'react-service-worker';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { persistWithLocalStorage } from 'react-query/persist-localstorage-experimental';
+import { persistQueryClient } from 'react-query/persistQueryClient-experimental'
+import { createWebStoragePersistor } from 'react-query/createWebStoragePersistor-experimental'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -14,15 +15,23 @@ const queryClient = new QueryClient({
   },
 });
 
-persistWithLocalStorage(queryClient);
-*/
+const localStoragePersistor = createWebStoragePersistor({storage: window.localStorage})
+
+persistQueryClient({
+
+  queryClient,
+
+  persistor: localStoragePersistor,
+
+})
+
 ReactDOM.render(
-  //<QueryClientProvider client={queryClient}>
-  <HashRouter>
-    <App />
-  </HashRouter>,
-  //</QueryClientProvider>,
+  <QueryClientProvider client={queryClient}>
+    <HashRouter>
+      <App />
+    </HashRouter>,
+  </QueryClientProvider>,
   document.getElementById('root')
 );
 
-//serviceWorkerRegistration.register();
+registerServiceWorker

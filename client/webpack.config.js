@@ -5,9 +5,11 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'index.bundle.js',
+        sourceMapFilename: '[name].map.js',
+        filename: '[name].js',
         publicPath: '/'
     },
+    devtool: 'eval-cheap-source-map',
     devServer: {
         host: '127.0.0.1',
         port: 3000,
