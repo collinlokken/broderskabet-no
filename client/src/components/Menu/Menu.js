@@ -1,20 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { StyledMenu } from './Menu.styled';
 import { bool } from 'prop-types';
 import { MenuElement } from './MenuElement';
 import { links } from '../utils/Links'
-import { StyledMenuElement } from './Menu.styled';
-import { Link } from 'react-router-dom';
 
 const Menu = ({open, setOpen}) => {
-  const elements = links.map(sublinks => <MenuElement setOpen={setOpen} links={sublinks.sublinks} key={sublinks.sublinks[0].title} />)
+  
+  const [sublinksOpened, setSublinksOpened] = useState()
+  
+  const openTitle = title =>{
+    let dict = {}
+    links.forEach(sublinks => sublinks.sublinks[0].title == title ? dict[sublinks.sublinks[0].title]=true : dict[sublinks.sublinks[0].title]=false);
+    setSublinksOpened(dict)
+  }
+
+  const handleWasOpened = title => {
+    if(!sublinksOpened[title]){
+      openTitle(title)
+    } else {
+      openTitle();
+    }
+  };
+
+  if (!sublinksOpened){
+    openTitle(); // opens all titles
+  }
+
+  const elements = links.map(sublinks => <MenuElement setOpen={setOpen} links={sublinks.sublinks} wasOpened={handleWasOpened} sublinksOpened={sublinksOpened} key={sublinks.sublinks[0].title}/>)
   return (
     <StyledMenu open={open}>
-      <StyledMenuElement>
-        <Link className="menu-element" to="/" onClick={() => setOpen(false)}>
-          Hjem
-        </Link>
-      </StyledMenuElement>
       { elements }
     </StyledMenu>
   )

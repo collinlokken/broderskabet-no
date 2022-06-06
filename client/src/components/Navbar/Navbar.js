@@ -7,7 +7,7 @@ import { links } from '../utils/Links'
 
 const Navbar = () => {
   
-  const elements = links.map(sublinks => <NavElement key={sublinks.sublinks[0].title} links={sublinks.sublinks}/>)
+  const elements = links.map(sublinks => <NavElement key={sublinks.sublinks[0].title} links={sublinks.sublinks}/>).slice(1)
   return (
     <StyledNavbar>
       <div className="logo-nav-element">
@@ -22,8 +22,5 @@ const Navbar = () => {
     </StyledNavbar>
   )
 }
-/*Navbar.propTypes = {
-
-}*/
 
 export { Navbar }
