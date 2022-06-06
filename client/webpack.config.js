@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ["regenerator-runtime/runtime.js",'./src/index.js'],
     output: {
         path: path.join(__dirname, '/dist'),
         sourceMapFilename: '[name].map.js',
@@ -44,7 +44,8 @@ module.exports = {
     resolve: {
         alias: {
             Components: path.resolve(__dirname, 'src/components'),
-            Images: path.resolve(__dirname, 'src/img')
+            Images: path.resolve(__dirname, 'src/img'),
+            Auth: path.resolve(__dirname, 'auth')
         },
     },
     plugins: [
@@ -53,6 +54,7 @@ module.exports = {
             title: 'Broderskabet',
             template: './src/index.html',
             filename: './index.html',
+            favicon: './src/favicon.ico'
         })
     ],
 };

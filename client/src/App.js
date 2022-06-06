@@ -4,8 +4,8 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Route, Routes, Link } from 'react-router-dom';
 
-import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, Register, Historie, Vedtekter, Collegiet, GroupSwitch, TempPage, PageNotFound, Burger, Menu, Navbar, Footer }  from 'Components';
-
+import { Base, Home, Student, Kontakt, About, Groups, Fadderuke, Trondheim, Login, SignIn, Historie, Vedtekter, Collegiet, GroupSwitch, TempPage, PageNotFound, Burger, Menu, Navbar, Footer, Arrangementer }  from 'Components';
+import Logout from './components/Login/Logout';
 
 function App() {
   
@@ -30,10 +30,12 @@ function App() {
               {/*<Route path="broderskabet" element={<About/>} />*/}
               <Route path="undergrupper" element={<Groups/>} />
               <Route path="login" element={<TempPage/>} />
-              <Route path="registrer" element={<TempPage/>} />
+              <Route path="registrer" element={<SignIn/>} />
+              <Route path="logut" element={<Logout/>} />
               <Route path="historie" element={<Historie/>} />
               <Route path="vedtekter" element={<Vedtekter/>} />
               <Route path="collegiet" element={<Collegiet/>} />
+              <Route path="arrangementer" element={<Arrangementer/>} />
               <Route path="undergrupper/:id" element={<GroupSwitch/>} />
               <Route path="*" element={<PageNotFound/>} />
             </Route>

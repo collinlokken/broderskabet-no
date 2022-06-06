@@ -10,6 +10,7 @@ export const StyledPage = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    flex-grow: 1;
 
     .group-box-container {
         display: flex;
@@ -161,4 +162,10 @@ export const StyledGroupPhoto = styled.div`
         width: 100%;
         height: ${({currentPhoto, thisPhoto})=> currentPhoto==thisPhoto? "35vh" : "0.1px"};
     }
+`
+
+export const StyledEvent = styled.div`
+    border: 1px solid black;
+    flex-grow: 1;
+    .event-title
 `

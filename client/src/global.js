@@ -6,8 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     border: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
@@ -15,8 +13,8 @@ export const GlobalStyles = createGlobalStyle`
   *, *::after, *::before {
     box-sizing: border-box;
   }
+
   body {
-    align-items: center;
     background: ${({ theme }) => theme.primaryLight};
     color: ${({ theme }) => theme.primaryDark};
     font-family: 'Karla', sans-serif;
@@ -28,7 +26,8 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    min-height: 100vh;
   }
   @media (min-width: ${({ theme }) => theme.mobile}) {
     .burger-menu{

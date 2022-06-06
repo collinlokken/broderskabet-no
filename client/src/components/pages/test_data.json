@@ -1,0 +1,58 @@
+{
+    "_createdAt": "2022-03-25T17:01:40Z",
+    "_id": "292b7eff-b7a2-4598-9a9b-6f1ab275b790",
+    "_rev": "R7P6p1IBX1SeLCqC8Vg8qe",
+    "_type": "arrangement",
+    "_updatedAt": "2022-03-25T17:37:45Z",
+    "beskrivelse": [
+      {
+        "_key": "d06b3597c01c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8c17f980fcfb",
+            "_type": "span",
+            "marks": [],
+            "text": "Vaffler og kaffe på kontoret! Ta med:"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ba0798f67847",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6adf5ec2e482",
+            "_type": "span",
+            "marks": [],
+            "text": "Lorem"
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "41b145574850",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1530a4d9fc8d",
+            "_type": "span",
+            "marks": [],
+            "text": "Ipsum"
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "dato": "2022-03-25T17:00:00.000Z",
+    "sted": "Kontoret",
+    "tittel": "Testarrangement"
+  }

@@ -3,7 +3,6 @@ import { ProfileCard } from '../utils/ProfileCard'
 import { ThreePartTemplate, StyledGroupPhoto } from './pages.styled'
 import useWindowSize from '../hooks/useWindowSize';
 import { blest, blest_t, ceremoni, ceremoni_t, chroniker, chroniker_t, novice, novice_t, phinans, phinans_t, troldquinde, troldquinde_t, domina, domina_t, vicedom, vicedom_t, Felles, Felles_t} from 'Images'
-import { Blaestemester, Ceremonimester, Chronikeskriffuer, Domina, Novicekommandeur, Phinancephut, Troldquinden, Vicedominus } from 'Components/pages/Styret'
 import { useQuery } from 'react-query';
 import { sanity, imageUrlBuilder } from '../../sanity';
 

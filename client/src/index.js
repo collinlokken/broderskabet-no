@@ -29,7 +29,7 @@ ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <HashRouter>
       <App />
-    </HashRouter>,
+    </HashRouter>
   </QueryClientProvider>,
   document.getElementById('root')
 );

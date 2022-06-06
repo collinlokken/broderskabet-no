@@ -26,7 +26,7 @@ export const Groups = () => {
                 <Box title="Jamgruppen" path={path("jamgruppen")} thumbnail={Jamgruppen}/>
                 <Box title="Lett på Tråd" path={path("lettpatrad")} thumbnail={Lettpt}/>
                 <Box title="PR-gruppen" path={path("pr")} thumbnail={PR}/>
-                <Box title="Revygruppen" path={path("revy")} thumbnail={Revygruppen}/>
+                <Box title="AD-revyen" path={path("revy")} thumbnail={Revygruppen}/>
                 <Box title="Tidsskriftet A" path={path("tidsskriftet")} thumbnail={Tidsskriftet}/>
             </div>
         </ThreePartTemplate>

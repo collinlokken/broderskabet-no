@@ -5,7 +5,7 @@ export const Revy = () => {
     return (
         <>
         <div className="page-title">
-            Revy
+            Arkitekt- og Designrevyen
         </div>
         <div className="page-text">
             <p>
