@@ -18,7 +18,7 @@ const Logout = () => {
         user?.email &&
         <div>
           <div>Email: {user.email}</div>
-          <button onClick={() => logout(()=>setRedirect('/register'))}>Logout</button>
+          <button onClick={() => logout(()=>setRedirect('/'))}>Logout</button>
         </div> 
       }
     </div>

@@ -32,14 +32,14 @@ export const StyledFooter = styled.div`
     }
 
     @media (min-width: ${({theme}) => theme.mobile}) {
-        flex-flow: column wrap;
-        max-height: calc(6rem + 40px);
+        flex-flow: row nowrap;
+        justify-content: space-between;
         .footer-text {
             position: relative;
-            left: 25%;
+            width: 30%;
+            left: calc(50% - 15%); 
         }
         .some-container {
-            align-self: flex-end;
             width: 125px;
         }
 

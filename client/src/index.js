@@ -6,6 +6,7 @@ import registerServiceWorker from 'react-service-worker';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { persistQueryClient } from 'react-query/persistQueryClient-experimental'
 import { createWebStoragePersistor } from 'react-query/createWebStoragePersistor-experimental'
+import ScrollToTop from './components/utils/scrollToTop';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -28,6 +29,7 @@ persistQueryClient({
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <HashRouter>
+      <ScrollToTop/>
       <App />
     </HashRouter>
   </QueryClientProvider>,

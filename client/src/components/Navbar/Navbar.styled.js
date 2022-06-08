@@ -2,16 +2,10 @@ import styled from 'styled-components';
 import { B_sort } from 'Images'
 
 export const StyledNavbar = styled.nav`
-  @media (max-width: ${({theme}) => theme.mobile}) {
-    .nav-link-container {
-        display: None;
-    }
-    margin: auto;
-  }
   width: 98vw;
-  height: 14vh;
-  min-height: 85px;
   padding: 2vw;
+  max-height: 14vh;
+  min-height: 10vh; 
 
   position: fixed;
   top: 0;

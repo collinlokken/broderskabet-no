@@ -27,7 +27,7 @@ const firebaseAuthConfig = ({ signInSuccessUrl }) => ({
 });
 
 const FirebaseAuth = () => {
-  const signInSuccessUrl = "/#/logut"
+  const signInSuccessUrl = "/#/logout"
   return (
     <div>
       <StyledFirebaseAuth

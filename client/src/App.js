@@ -28,11 +28,9 @@ function App() {
               <Route path="trondheim" element={<Trondheim/>} />
               <Route path="student" element={<Student/>} />
               <Route path="kontakt" element={<Kontakt/>} />
-              {/*<Route path="broderskabet" element={<About/>} />*/}
               <Route path="undergrupper" element={<Groups/>} />
-              <Route path="login" element={<TempPage/>} />
-              <Route path="registrer" element={<SignIn/>} />
-              <Route path="logut" element={<Logout/>} />
+              <Route path="login" element={<SignIn/>} />
+              <Route path="logout" element={<Logout/>} />
               <Route path="historie" element={<Historie/>} />
               <Route path="vedtekter" element={<Vedtekter/>} />
               <Route path="collegiet" element={<Collegiet/>} />
