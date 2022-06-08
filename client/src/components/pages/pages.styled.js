@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const StyledPage = styled.div`
     padding: 0 2rem;
-    margin-top: 17vh;
-    min-height: calc(100vh - 17vh - 6rem - 40px - 35px); /*minus height of navbar and footer*/
+    margin-top: 20vh;
+    min-height: calc(100vh - 14vh - 6vh); /*minus height of navbar*/
+
     width: fit-content;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
 

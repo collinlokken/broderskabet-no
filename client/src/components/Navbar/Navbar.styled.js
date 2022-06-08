@@ -5,7 +5,8 @@ export const StyledNavbar = styled.nav`
   width: 98vw;
   padding: 2vw;
   max-height: 14vh;
-  min-height: 10vh; 
+  min-height: 10vh;
+  margin-bottom: 6vh;
 
   position: fixed;
   top: 0;
