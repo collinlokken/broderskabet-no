@@ -12,7 +12,7 @@ export const links = [
     {sublinks: [
       {title: "Student", path: "student"},
       {title: "Tips", path: "student"},
-      {title: "Fadderuken 2021", path: "fadderuke"},
+      {title: "Fadderuken", path: "fadderuke"},
       {title: "Byen og Gløs", path: "trondheim"},
       //{title: "Arrangementer", path: "arrangementer"},
     ]}, 
