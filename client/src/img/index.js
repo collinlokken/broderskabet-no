@@ -21,7 +21,8 @@ export const Turgruppen = require('Images/Turgruppen.png');
 // Fadderuka
 export const Fadderbarn = require('Images/fadderuka/fadderbarn.jpg');
 export const Pakkeliste = require('Images/fadderuka/pakkeliste22.jpg');
-export const Program = require('Images/fadderuka/TBAprogram.jpg');
+export const Program = require('Images/fadderuka/program.jpg');
+export const ProgramMobile = require('Images/fadderuka/program-mobil.jpg');
 
 // Collegiet
 export const blest = require('Images/collegiet/Blestemester.jpg');

@@ -14,11 +14,9 @@ export const Fadderuke = () => {
                 <div className="page-title">
                     Fadderukene 2022
                 </div>
-                {windowSize.width >= 1000 ? // midlertidig
-                    <div className="page-front">
-                        <img src={image} alt="program"/>
-                    </div>
-                :null}
+                <div className="page-front">
+                    <img src={image} alt="program"/>
+                </div>
             </ThreePartTemplate>
             <ThreePartTemplate fontWeight={500} textWidth={36} style={{marginTop: '2rem'}}>
                 <div className="page-title">
@@ -38,7 +36,7 @@ export const Fadderuke = () => {
                         Påmelding til fadderukene 2022 gjøres i dette <a href="https://forms.gle/o5tJMRkmN8xspDfW6">skjemaet</a>
                     </p>
                     <p>
-                        (du finner også skjemaet på facebookgruppa)
+                        (du finner også skjemaet på <a href="https://www.facebook.com/groups/arkitekturfadderukene2022/?ref=share" target="_blank" rel="noopener">facebookgruppa</a>).
                     </p>
                     <p>
                         Programmet vil publisert om ikke alt for lenge:)
