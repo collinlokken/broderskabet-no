@@ -28,18 +28,35 @@ export const Fadderuke = () => {
                         Vi i Broderskabet gratulerer så mye med plass på dette herlige studiet, dere har så mye gøy
                         i vente! Aller først ut er fadderukene 2022, i løpet av disse to ukene vil dere blant annet bli
                         bedre kjent med Trondheim, linjeforeningen vår og ikke minst hverandre.
-                        Det første du må gjøre for å få med deg alle nyheter og oppdateringer angående
-                        fadderukene er å søke om gruppen “Arkitektur NTNU - kull  ́22” og bli medlem.
+                        Det første du må gjøre for å få med deg alle nyheter og oppdateringer angående fadderukene er å finne gruppa vår på facebook!
                     </p>
+                    <br />
+                    <h4>
+                        5-årig master i arkitektur:
+                    </h4>
+                    <p>
+                        For å få med deg alle nyheter og oppdateringer angående fadderukene:
+                    </p>
+                    <p>
+                        Søk opp gruppen "Arkitektur NTNU - kull '22" på facebook og bli medlem:)
+                    </p>
+                    <p>
+                        Link til gruppa: <a href='https://www.facebook.com/groups/arkitekturfadderukene2022/'>her</a>
+                    </p>
+                    <br />
+                    <h4>
+                        2-årig master i arkitektur / sustainable architecture / urban ecological planning:
+                    </h4>
+                    <p>
+                        To get all the news and updates about the buddy program, please find the group "IAP NTNU- Master '22" on facebook and join it:)
+                    </p>
+                    <p>
+                        Link to the group: <a href='https://www.facebook.com/groups/1000461223994924/'>here</a>
+                    </p>
+                    <br />
                     <p>
                         Fadderukene 2022 er for alle nye studenter ved Arkitektur på NTNU og er helt gratis!
                         Påmelding til fadderukene 2022 gjøres i dette <a href="https://forms.gle/o5tJMRkmN8xspDfW6">skjemaet</a>
-                    </p>
-                    <p>
-                        (du finner også skjemaet på <a href="https://www.facebook.com/groups/arkitekturfadderukene2022/?ref=share" target="_blank" rel="noopener">facebookgruppa</a>).
-                    </p>
-                    <p>
-                        Programmet vil publisert om ikke alt for lenge:)
                     </p>
                     <p>
                         For spørsmål eller andre henvendelser, kan dere ta kontakt med <Link to="/collegiet#Novicekommandeur">Novicekommandeur</Link> (faddersjef):
