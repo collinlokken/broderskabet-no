@@ -1,22 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { ProfileCard } from '../utils/ProfileCard'
 import { ThreePartTemplate, StyledGroupPhoto } from './pages.styled'
 import useWindowSize from '../hooks/useWindowSize';
 import { blest, blest_t, ceremoni, ceremoni_t, chroniker, chroniker_t, novice, novice_t, phinans, phinans_t, troldquinde, troldquinde_t, domina, domina_t, vicedom, vicedom_t, Felles, Felles_t} from 'Images'
 import { useQuery } from 'react-query';
 import { sanity, imageUrlBuilder } from '../../sanity';
+import { SanityContext } from '../../sanityUtils/SanityContext';
 
 export const Collegiet = () => {
     const windowSize = useWindowSize()
     const isMobile = windowSize.width < 1000;
     const [currentPhoto, setCurrentPhoto] = useState(0);
-    const query = `
-        *[ _type == 'collegiemedlem' ] { id, tittel, telefon, email, navn, beskrivelse, tekst}
-    `;
-    const { data: collegiemedlem } = useQuery('collegiemedlem', () => sanity.fetch(query));
-    if (!collegiemedlem) {
-        return <h1>Loading…</h1>;
-    }
+    const collegiemedlem = useContext(SanityContext).filter(document => document._type == "collegiemedlem")
+
     return (
         <ThreePartTemplate textWidth={25}>
             <div className="page-title">

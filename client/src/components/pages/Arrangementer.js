@@ -1,11 +1,10 @@
-import React from "react"
-import { useQuery } from 'react-query';
-import { sanity, imageUrlBuilder } from '../../sanity';
+import React, { useContext } from "react"
+import { imageUrlBuilder } from '../../sanity';
 import PortableText from '@sanity/block-content-to-react'
+import { SanityContext } from "../../sanityUtils/SanityContext";
 
 import { ThreePartTemplate, HomeImagePage, StyledEvent } from './pages.styled';
 import { Forsidebilde } from 'Images'
-import test_data from './test_data.json'
 
 
 const urlFor = source =>
@@ -24,13 +23,15 @@ const serializer = {
 }
 
 export const Arrangementer = () => {
-    const query = `*[ _type == 'arrangement' ] { tittel, dato, sted, beskrivelse}`;
-    /**const { data: arrangementer } = useQuery('arrangementer', () => sanity.fetch(query));
-    if(!arrangementer) {
-        return <h1>Loading…</h1>;
+    const context = useContext(SanityContext).filter(document => document._type == "arrangement")
+
+    if(context.length == 0) {
+        return <PageNotFound />;
     }
-    **/
-    let deserializedDate = (new Date(test_data.dato));
+
+    const data = context[0]
+    
+    let deserializedDate = (new Date(data.dato));
     let timeString = deserializedDate.toTimeString().split(' ')[0].split(':')
     timeString = timeString[0].concat(':').concat(timeString[1])
     let dayString = `${deserializedDate.getDate()}/${deserializedDate.getMonth()+1}/${deserializedDate.getFullYear().toString().slice(-2)}`
@@ -46,17 +47,17 @@ export const Arrangementer = () => {
             <div>
                 <StyledEvent>
                     <div className="event-title">
-                        <span>{test_data.tittel}</span>
+                        <span>{data.tittel}</span>
                     </div>
                     <div className="event-date">
                         <span>{dateString}</span>
                     </div>
                     <div className="event-location">
-                        <span>{test_data.sted}</span>
+                        <span>{data.sted}</span>
                     </div>
                     <div className="event-beskrivelse">
                         <PortableText 
-                            blocks={test_data.beskrivelse}
+                            blocks={data.beskrivelse}
                             serializers={serializer}
                         />
                     </div>
